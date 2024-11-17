@@ -1,0 +1,68 @@
+:root {
+    --primBrown :#1b1414;
+    --secBrown : #403131;
+    --primWhite : #FFF1DC;
+    --secWhite : #EFEFEF;
+    
+}
+
+body {
+    font-family: "Archivo";
+    background-color: var(--primBrown);
+}
+
+nav {
+    background-color: var(--primBrown);
+    color: white;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 115px;
+    box-shadow: 0px 37px 30px 0px rgba(0, 0, 0, 50%);
+
+    /* LOGO */
+    > img {
+        width: 92px;
+        height: 72px;
+        margin-left: 100px;
+    }
+    
+    /* NAVIGATION */
+    > div {
+        display: flex;
+        gap: 65px;
+        align-items: center;
+
+        > li {
+            font-family: "Archivo";
+            font-size: 1.25rem;
+        }
+    }
+
+    /* LOGIN BUTTON */
+    > button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.50rem;
+        background-color: var(--primWhite);
+        border-radius: 50px;
+        border: none;
+        width: 162px;
+        height: 36px;
+        font-size: 1rem;
+        font-weight: bold;
+        padding: 0px 20px;
+        margin-right: 100px;        
+        cursor: pointer;
+        
+        
+        > img {
+            width: 1.25rem;            
+            height: 1.25rem;
+    
+        }
+    }
+}
+
