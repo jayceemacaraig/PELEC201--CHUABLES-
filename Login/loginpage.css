@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Lemon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:ital,wght@0,100..900;1,100..900&family=Lemon&display=swap');
+
+:root {
+    --navBackground: #1b1414; 
+    --linkColor: #fff;
+    --hoverColor: #ffcc00;
+    --activeColor: #ffcc00;
+    --buttonBackground: #fff1dc;
+    --buttonTextColor: #1b1414; 
+    --logoSize: 60px; 
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Archivo";
+    background-color: #403131;
+    color: var(--linkColor);
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: var(--navBackground);
+    box-shadow: 0px 37px 30px 0px rgba(0, 0, 0, 50%);
+  }
+  
+
+  .logo img {
+    width: var(--logoSize);
+    height: var(--logoSize);
+  }
+  
+
+  .nav-links {
+    display: flex;
+    list-style: none;
+    margin-left: -2%; 
+    padding: 0;
+  }
+  
+  .nav-links li {
+    margin: 0 20px;
+    
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: var(--linkColor);
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    transition: color 0.3s ease;
+    text-decoration: none; 
+    background-color: transparent;
+    font-family: "Archivo";
+  }
+  
+  .nav-links a:hover,
+  .nav-links a.active {
+    color: var(--hoverColor);
+    
+
+  }
+  
+  .nav-links a.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background-color: var(--activeColor);
+  }
+
+  .login-button {
+    background-color: var(--buttonBackground);
+    color: var(--buttonTextColor);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    margin-left: -100px;
+    width: 10%;
+  }
+  
+  .login-button img {
+    width: 20px;
+    height: 20px;
+    margin-left: 8px;
+  }
+  
+  .login-button:hover {
+    background-color: var(--hoverColor);
+    color: #fff;
+  }
+
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: center; 
+      padding: 15px 20px;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      margin-top: 15px; 
+    }
+  
+    .nav-links li {
+      margin: 10px 0;
+    }
+  
+    .login-button {
+      margin-top: 15px;
+    }
+  }
+  
