@@ -154,9 +154,111 @@ nav {
     text-align: center;
     position: relative;
 
-
     > img {
         position: relative;
         z-index: -1;
+    }
+
+    > div {
+        color: var(--primBrown);
+        position: absolute;
+        align-self: center;
+        z-index: 1;
+
+        > h1 {
+            font: bold 6rem 'Archivo';
+            margin-bottom: 20px;
+        }
+
+        > p {
+            font: 500 2rem 'Archivo';
+            margin-bottom: 80px;
+        }
+    }
+}
+
+.fourth-frame {
+    background-color: var(--primBrown);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    > h1 {
+        font: bold 6rem 'Archivo';
+        color: var(--primWhite);
+        margin-bottom: 20px;
+    }
+
+    > p {
+        font: 500 2rem 'Archivo';
+        color: var(--primWhite);
+
+        > img {margin-right: 20px; align-self: center;}
+    }
+
+    > img {
+        margin-bottom: 35px;
+    }
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--primBrown);
+    width: 1440px;
+    
+    > div {
+        margin-top: 50px;
+        display: flex;
+        color: var(--primWhite);
+        margin-bottom: 20px;
+        gap: 102px;
+
+        > div:nth-child(1) {
+            display: flex;
+
+            > div {
+                margin-top: 20px;
+
+                > h1 {
+                    font: normal 2rem 'Lemon';
+                }
+
+                > div > img {
+                    margin-left: 25px;
+                }
+            }
+            > img {
+                width: 300px;
+                height: 300px;
+                margin-right: 15px;
+                margin-left: -120px;
+            }
+        }
+
+        > div:nth-child(2) {
+            > p {
+                font: 600 2rem 'Archivo';
+                margin: 0;
+            }
+            > a {
+                color: var(--primWhite);
+                display: block;
+                text-align: center;
+                text-decoration: none;
+                font: normal 1.5rem 'Archivo';
+                margin-bottom: 10px;
+            }
+        }
+
+    }
+    > p {
+        font: normal 1.5rem 'Archivo';
+        color: #ffffff82;
+        border-top: 1px solid #FFFFFF;
+        width: 1440px;
+        padding-top: 20px;
+        text-align: center;
     }
 }
