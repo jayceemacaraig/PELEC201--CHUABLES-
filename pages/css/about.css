@@ -42,6 +42,7 @@ body {
    /* NAVIGATION BAR */
 nav {
     position: sticky;
+    z-index: 2;
     top: 0;
     background-color: var(--primBrown);
     color: white;
@@ -163,7 +164,7 @@ nav {
         color: var(--primBrown);
         position: absolute;
         align-self: center;
-        z-index: 1;
+        z-index: -1;
 
         > h1 {
             font: bold 6rem 'Archivo';
