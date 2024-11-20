@@ -10,6 +10,26 @@
     
 }
 
+.button:hover {
+    transform: translateY(-5px);
+    transition: 0.3s ease;
+    background-color: #fff1dc73;
+}
+
+.navigation::after{
+    content: '';
+    display: block;
+    padding-bottom: 5px;
+    border-bottom: 4px solid #FFF1DC;
+    border-radius: 2px;
+    transform: scaleX(0);
+    transition: transform 0.2s ease;
+}
+
+.navigation:hover::after{
+    transform: scaleX(1);
+}
+
 body {
     font-family: "Archivo";
     background-color: var(--primBrown);
