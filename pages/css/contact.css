@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Lemon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:ital,wght@0,100..900;1,100..900&family=Lemon&display=swap');
+
+:root {
+    --navBackground: #1b1414; 
+    --linkColor: #fff;
+    --hoverColor: #ffcc00;
+    --activeColor: #ffcc00;
+    --buttonBackground: #fff1dc;
+    --buttonTextColor: #1b1414; 
+    --logoSize: 60px; 
+  }
+
+
+
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Archivo";
+    background-color: var(--navBackground);
+    color: var(--linkColor);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav {
+    position: sticky;
+    top: 0;
+    background-color: #1b1414;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1450px;
+    height: 100px;
+    box-shadow: 0px 37px 30px 0px rgba(0, 0, 0, 50%);
+    z-index: 1;
+
+    /* LOGO */
+    > img {
+        width: 92px;
+        height: 72px;
+        margin-left: 100px;
+        cursor: pointer;
+    }
+
+    /* NAVIGATION */
+    > div {
+        display: flex;
+        gap: 65px;
+        align-items: center;
+
+        > a {
+            color: white;
+            text-decoration: none;
+            font: 1.25rem 'Archivo';
+        }
+    }
+
+    /* LOGIN BUTTON */
+    > a {
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.50rem;
+        background-color: #fff1dc;
+        color: black;
+        font: bold 1rem 'Archivo';
+        width: 162px;
+        height: 36px;
+        margin-right: 100px;        
+        border-radius: 50px;
+        border: none;
+        cursor: pointer;
+        
+        > img {
+            width: 1.25rem;            
+            height: 1.25rem;
+        }
+    }
+}
+  
+.contact-container {
+    position: relative;
+    z-index: -1;
+    width: 1440px;
+    background: rgb(64,49,49);
+    background: linear-gradient(180deg, rgba(64,49,49,1) 0%, rgba(27,20,20,1) 100%);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+  }
+
+h1{ 
+    text-align: center;
+    color:#FFF1DC;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font: normal 4rem "Archivo";
+    
+    
+
+}
+h4{
+    text-align: center;
+    color:#FFF1DC;
+    font: normal 1.5rem "Archivo";
+}
+
+body {
+    font-family:"Archivo";
+    background-color:   #403131;
+    margin: 0;
+    padding: 0;
+}
+.input-container {
+    display: flex;
+    justify-content: space-between; 
+    margin-bottom: 15px;
+    height: 2%;
+    width: 50%;
+    margin-left:25%;
+    margin-top:  2%;
+    margin-bottom :2%;
+}
+
+.input-container input {
+    
+    max-width: 400px;
+    flex: 1; 
+    padding: 10px; 
+    border: 1px solid #FFF1DC;
+    border-radius: 4px; 
+    font-size: 16px;
+    background-color: #FFF1DC;
+
+}
+
+.input-container input:last-child {
+    margin-left: 40px; 
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder {
+    color: #aaa;
+    opacity: 1;
+
+}
+
+textarea {
+    background-color: #FFF1DC;
+    width: 50%;
+    padding: 20px;
+    height: 8%;
+    border: 1px solid ;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-left: 25%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    
+
+}
+
+button {
+    width: 15%;
+    padding: 10px;
+    background-color: #614a4a;
+    border: none;
+    border-radius: 4px;
+    color: #FFF1DC;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 42.5%;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+button:hover {
+    background-color: #614a4a;
+}
+
+h5{
+    color: #FFF1DC;
+    margin-left: 25%;
+    margin-top: 40px;
+
+}
+
+.social-container{
+
+    background-color: #FFF1DC;
+    width: 50%;
+    padding: 20px;
+    height: 60px;
+    border: 1px solid ;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-left: 25%;
+    margin-top: 15px;
+    margin-bottom: 10%;
+
+
+}
+.social-icon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    margin-top: -25px;
+    
+    
+
+}
+.social-name{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    margin-top: -25px;
+    margin-left: -7% ;
+    margin-right: -4%;
+    font-size: 7px;
+    color: #1b1414;
+    
+
+
+}   
+
+.button:hover {
+  transform: translateY(-5px);
+  transition: 0.3s ease;
+  background-color: #fff1dc73;
+}
+
+.navigation::after{
+  content: '';
+  display: block;
+  padding-bottom: 5px;
+  border-bottom: 4px solid #FFF1DC;
+  border-radius: 2px;
+  transform: scaleX(0);
+  transition: transform 0.2s ease;
+}
+
+.navigation:hover::after{
+  transform: scaleX(1);
+}
+
+
+nav {
+  position: sticky;
+  top: 0;
+  background-color: #1b1414;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1450px;
+  height: 100px;
+  box-shadow: 0px 37px 30px 0px rgba(0, 0, 0, 50%);
+  z-index: 1;
+
+  /* LOGO */
+  > img {
+      width: 92px;
+      height: 72px;
+      margin-left: 100px;
+      cursor: pointer;
+  }
+
+  /* NAVIGATION */
+  > div {
+      display: flex;
+      gap: 65px;
+      align-items: center;
+
+      > a {
+          color: white;
+          text-decoration: none;
+          font: 1.25rem 'Archivo';
+      }
+  }
+
+  /* LOGIN BUTTON */
+  > a {
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.50rem;
+      background-color: #fff1dc;
+      color: black;
+      font: bold 1rem 'Archivo';
+      width: 162px;
+      height: 36px;
+      margin-right: 100px;        
+      border-radius: 50px;
+      border: none;
+      cursor: pointer;
+      
+      > img {
+          width: 1.25rem;            
+          height: 1.25rem;
+      }
+  }
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1b1414;
+  width: 1440px;
+  /* height: 320px; */
+  
+
+  > div {
+      margin-top: 50px;
+      display: flex;
+      color: #fff1dc;
+      margin-bottom: 20px;
+      gap: 102px;
+
+      > div:nth-child(1) {
+          display: flex;
+
+          > div {
+              margin-top: 20px;
+
+              > h1 {
+                  font: normal 2rem 'Lemon';
+              }
+
+              > div > img {
+                  margin-left: 25px;
+              }
+          }
+          > img {
+              width: 300px;
+              height: 300px;
+              margin-right: 15px;
+              margin-left: -120px;
+          }
+      }
+
+      > div:nth-child(2) {
+          > h1 {
+              font: 600 2rem 'Archivo';
+              margin: 0;
+          }
+          > a {
+              color: #fff1dc;
+              display: block;
+              text-align: center;
+              text-decoration: none;
+              font: normal 1.5rem 'Archivo';
+              margin-bottom: 10px;
+          }
+      }
+
+  }
+  > p {
+      font: normal 1.5rem 'Archivo';
+      color: #ffffff82;
+      border-top: 1px solid #FFFFFF;
+      width: 1440px;
+      padding-top: 20px;
+      text-align: center;
+  }
+}
