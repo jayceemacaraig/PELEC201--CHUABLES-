@@ -373,8 +373,6 @@ footer {
     align-items: center;
     background-color: var(--primBrown);
     width: 1440px;
-    /* height: 320px; */
-    
 
     > div {
         margin-top: 50px;
@@ -429,4 +427,14 @@ footer {
         padding-top: 20px;
         text-align: center;
     }
+}
+
+
+/* for TABLET */
+@media screen (max-width: 1012px;) {}
+
+
+/* for MOBILE */
+@media screen (max-width: 360px;) {
+    
 }

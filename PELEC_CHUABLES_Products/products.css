@@ -10,6 +10,26 @@
     
 }
 
+.button:hover {
+    transform: translateY(-5px);
+    transition: 0.3s ease;
+    background-color: #fff1dc73;
+}
+
+.navigation::after{
+    content: '';
+    display: block;
+    padding-bottom: 5px;
+    border-bottom: 4px solid #FFF1DC;
+    border-radius: 2px;
+    transform: scaleX(0);
+    transition: transform 0.2s ease;
+}
+
+.navigation:hover::after{
+    transform: scaleX(1);
+}
+
 body {
     font-family: "Archivo";
     background-color: var(--primBrown);
@@ -19,7 +39,26 @@ body {
     justify-content: center;
 }
 
-   /* NAVIGATION BAR */
+.button:hover {
+    transform: translateY(-5px);
+    transition: 0.3s ease;
+    background-color: #fff1dc73;
+}
+
+.navigation::after{
+    content: '';
+    display: block;
+    padding-bottom: 5px;
+    border-bottom: 4px solid #FFF1DC;
+    border-radius: 2px;
+    transform: scaleX(0);
+    transition: transform 0.2s ease;
+}
+
+.navigation:hover::after{
+    transform: scaleX(1);
+}
+
 nav {
     position: sticky;
     top: 0;
@@ -28,11 +67,11 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1850px;
+    width: 1450px;
     height: 100px;
     box-shadow: 0px 37px 30px 0px rgba(0, 0, 0, 50%);
-    padding: 0 20px; 
-    z-index: 10;
+    z-index: 1;
+
     /* LOGO */
     > img {
         width: 92px;
@@ -57,29 +96,24 @@ nav {
     /* LOGIN BUTTON */
     > a {
         text-decoration: none;
-        
-        > button {
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 0.50rem;
         background-color: var(--primWhite);
+        color: black;
         font: bold 1rem 'Archivo';
         width: 162px;
         height: 36px;
-        padding: 0px 20px;
         margin-right: 100px;        
         border-radius: 50px;
         border: none;
         cursor: pointer;
-
-        }
         
-    > img {
-        width: 1.25rem;            
-        height: 1.25rem;
-
-    }
+        > img {
+            width: 1.25rem;            
+            height: 1.25rem;
+        }
     }
 }
 
@@ -172,7 +206,8 @@ nav {
         color: #FFF1DC;   
         font-weight: bold;                  
         cursor: pointer;                        
-        transition: opacity 0.3s ease;            
+        transition: opacity 0.3s ease; 
+        text-decoration: none;           
     }
 
     .menu-items .highlighted {

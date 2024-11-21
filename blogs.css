@@ -39,10 +39,8 @@ body {
     justify-content: center;
 }
 
-   /* NAVIGATION BAR */
 nav {
     position: sticky;
-    z-index: 2;
     top: 0;
     background-color: var(--primBrown);
     color: white;
@@ -99,108 +97,114 @@ nav {
     }
 }
 
-.first-frame {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   color: var(--primWhite);
-   text-align: center;
-
-   > .bg-image {
-    position: absolute;
-    z-index: -1;
-   }
-
-   > img:nth-child(2) {
-        margin-top: 25px;
-        margin-bottom: 50px;
-        width: 150px;
-        height: 150px;
-   }
-
-   > h1 {
-    font: bold 6rem 'Archivo';
-    margin: 0 0 10px 0;
-   }
-
-   > #stars {
-    margin-top: 20px;
-    margin-bottom: 50px;
-   }
-
-   > p {
-    font: 600 2rem 'Archivo';
-    line-height: 40px;
-   }
-
-}
-
-.second-frame {
-    width: 1440px;
-    height: 782px;
-    background-color: var(--secBrown);
-    display: flex;
-    justify-content: center;
-
-    > img {
-        margin-top: 56px;
-    }
-}
-
-.third-frame {
-    color: var(--primWhite);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    position: relative;
-
-    > img {
-        position: relative;
-        z-index: -1;
-    }
-
-    > div {
-        color: var(--primBrown);
-        position: absolute;
-        align-self: center;
-        z-index: -1;
-
-        > h1 {
-            font: bold 6rem 'Archivo';
-            margin-bottom: 20px;
-        }
-
-        > p {
-            font: 500 2rem 'Archivo';
-            margin-bottom: 80px;
-        }
-    }
-}
-
-.fourth-frame {
-    background-color: var(--primBrown);
+body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
 
-    > h1 {
-        font: bold 6rem 'Archivo';
-        color: var(--primWhite);
-        margin-bottom: 20px;
-    }
+/* BLOG CONTENT SECTION */
+.blog-content {
+    width: 1220px;
+    /* max-width: 1220px; */
+    /* margin: 0px auto; */
+    background-color: var(--secBrown);
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+    padding: 20px;
+}
 
-    > p {
-        font: 500 2rem 'Archivo';
-        color: var(--primWhite);
+/* BLOG HEADER */
+.blog-header {
+    text-align: center;
+}
 
-        > img {margin-right: 20px; align-self: center;}
-    }
+.blog-header h1 {
+    font-family: "Archivo", sans-serif;
+    font-weight: bold;
+    font-size: 1.8rem;
+    margin: 20px 0;
+    color: var(--secWhite);
+}
 
-    > img {
-        margin-bottom: 35px;
-        width: 1240px;
-    }
+.blog-header .blog-image {
+    width: 70%;
+    border-radius: 15px;
+    margin: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* ARTICLE TEXT */
+article {
+    line-height: 1.6;
+}
+
+article h2 {
+    margin-top: 20px;
+    color: white;
+    font-size: 1.4rem;
+}
+article h3 {
+    color: white;
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+article ol {
+    padding-left: 20px;
+    color: white;
+}
+
+article ul {
+    padding-left: 20px;
+    color: white;
+}
+
+article p {
+    font-size: 1rem;
+    margin: 5px 0 0 20px;
+    color: var(--secWhite);
+}
+
+/* NAVIGATION BUTTONS */
+.nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.nav-buttons .back-btn,
+.nav-buttons .next-btn {
+    background-color: var(--primWhite);
+    color: var(--secBrown);
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.nav-buttons .back-btn:hover,
+.nav-buttons .next-btn:hover {
+    background-color: var(--highlightGold);
+    color: var(--primBrown);
+}
+
+.update-label {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.1rem;
+    color: var(--primWhite);
+    font-weight: bold;
+    text-align: center;
+    background-color: var(--secBrown);
+    padding: 5px 10px;
+    border-radius: 10px;
 }
 
 footer {
@@ -209,7 +213,9 @@ footer {
     align-items: center;
     background-color: var(--primBrown);
     width: 1440px;
+    /* height: 320px; */
     
+
     > div {
         margin-top: 50px;
         display: flex;
@@ -263,4 +269,4 @@ footer {
         padding-top: 20px;
         text-align: center;
     }
-}
+} 
