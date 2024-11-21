@@ -97,11 +97,19 @@ nav {
     }
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
 /* BLOG CONTENT SECTION */
 .blog-content {
-    width: 100%;
-    max-width: 1420px;
-    margin: 0px auto;
+    width: 1220px;
+    /* max-width: 1220px; */
+    /* margin: 0px auto; */
     background-color: var(--secBrown);
     border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
