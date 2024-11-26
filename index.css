@@ -431,10 +431,10 @@ footer {
 
 
 /* for TABLET */
-@media screen (max-width: 1012px;) {}
-
+/* @media screen (max-width: 1012px;) {}
+ */
 
 /* for MOBILE */
-@media screen (max-width: 360px;) {
+/* @media screen (max-width: 360px;) {
     
-}
+} */
