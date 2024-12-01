@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="main">
-        <button class="back-button" onclick="history.back()" >Back</button>
+        <a class="back-button" href="../index.html" onclick="history.back(); return false;">Back</a>
         <div class="login_container">
             <h1>
                 Login
@@ -33,7 +33,8 @@
                 </div>
                 <div class="no-account-container">
                     <span class="no-account-text" style="color: blue;">Don't Have An Account?</span>
-                    <button class="create-account-btn" >Create Account</button>
+                    <button class="create-account-btn" onclick="window.location.href='register.html';">Create Account</button>
+
                 </div>
 
             

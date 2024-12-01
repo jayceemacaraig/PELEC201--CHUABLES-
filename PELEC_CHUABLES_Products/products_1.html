@@ -31,21 +31,182 @@
 
         <div class="new-rectangle">
             <div class="promotion-text">CURRENT PROMOTION</div>
-            <img class="promotion-image" src="Products/PROMOTION.png" alt="Promotion Image">
-            <img class="second-promotion-image" src="Products/Best Sellers.png" alt="Second Promotion Image">
+            <div class="promotion-container">
+                <div class="promotion-title">Teacher's Day Specials</div>
+                <img class="promotion-image" src="Products/Black_BG.png" alt="Promotion Image">
+                <img class="overlay-image left" src="Products/Promotion_Image 1.png" alt="Left Overlay Image">
+                <img class="overlay-image right" src="Products/Promotion_Image 2.png" alt="Right Overlay Image">
+            </div>
+            <div class="best-sellers-container">
+                <div class="best-sellers-title">
+                    Best Sellers
+                    <div class="favorites-title">CHUABLES FAVORITES</div>
+                </div>
+                <div class="best-sellers-images">
+                    <div class="item">
+                        <img src="Products/Strawberry_Castella.png" alt="Strawberry Castella">
+                    </div>
+                    <div class="item">
+                        <img src="Products/Red Velvet.png" alt="Red Velvet">
+                    </div>
+                    <div class="item">
+                        <img src="Products/Pretzel Decadent.png" alt="Pretzel Decadent">
+                    </div>
+                </div>
+            </div>
+
             <div class="promotion-text-2">PRODUCTS</div>
         
             <hr class="promotion-line">
         
             <div class="menu-items">
-                <div class="item highlighted">Mini Cakes</div>
-                <a href="products_2.html" class="item"><div>Snack Pouches</div></a>
-                <a href="products_3.html" class="item"><div>Dessert Boxes</div></a>
-                <a href="products_4.html" class="item"><div>Drinks (Milk-based)</div></a>
+                <div class="item highlighted" data-category="miniCakes">Mini Cakes</div>
+                <div class="item" data-category="snackPouches">Snack Pouches</div>
+                <div class="item" data-category="dessertBoxes">Dessert Boxes</div>
+                <div class="item" data-category="drinks">Drinks (Milk-based)</div>
             </div>
-        
+            
             <hr class="promotion-line-2">
-            <img class="Snack-Pouches-images" src="Products/DessertBoxes.png" alt="Snack Pouches Image">
+            
+            <div class="products-grid" id="productGrid">
+                <!-- Mini Cakes products -->
+                <div class="miniCakes product-item">
+                    <img src="Products/Birthday.png" alt="Birthday" class="product-image">
+                </div>
+                <div class="miniCakes product-item">
+                    <img src="Products/Red_Velvet.png" alt="Red Velvet" class="product-image">
+                </div>
+                <div class="miniCakes product-item">
+                    <img src="Products/Pretzel_Decadent.png" alt="Pretzel Decadent" class="product-image">
+                </div>
+                <div class="miniCakes product-item">
+                    <img src="Products/Chocolate_Decadent.png" alt="Chocolate Decadent" class="product-image">
+                </div>
+                <div class="miniCakes product-item">
+                    <img src="Products/Strawberry.png" alt="Strawberry Castella" class="product-image">
+                </div>
+                <div class="miniCakes product-item">
+                    <img src="Products/Mango_Castella.png" alt="Mango Castella" class="product-image">
+                </div>
+                <div class="miniCakes product-item">
+                    <img src="Products/Secret.png" alt="Secret" class="product-image">
+                </div>
+                <div class="miniCakes product-item">
+                    <img src="Products/Praline.png" alt="Praline" class="product-image">
+                </div>
+            
+                <!-- Snack Pouches products (hidden initially) -->
+                <div class="snackPouches product-item" style="display: none;">
+                    <img src="Products/Butter Cookies.png" alt="Butter Cookies" class="product-image">
+                </div>
+                <div class="snackPouches product-item" style="display: none;">
+                    <img src="Products/Classic Chocolate Chip.png" alt="Classic Chocolate Chip Cookies" class="product-image">
+                </div>
+                <div class="snackPouches product-item" style="display: none;">
+                    <img src="Products/Coffee Chocolate Chip.png" alt="Coffee Chocolate Chip Cookies" class="product-image">
+                </div>
+                <div class="snackPouches product-item" style="display: none;">
+                    <img src="Products/Red Velvet Cream Cheese.png" alt="Red Velvet with Cream Cheese" class="product-image">
+                </div>
+                <div class="snackPouches product-item" style="display: none;">
+                    <img src="Products/Brownie.png" alt="Brownie Bites" class="product-image">
+                </div>
+                <div class="snackPouches product-item" style="display: none;">
+                    <img src="Products/Double Chocolate Chip.png" alt="Double Chocolate Chip Cakes" class="product-image">
+                </div>
+            
+                <div class="dessertBoxes product-item" style="display: none;">
+                    <img src="Products/Dessert Cups.png" alt="Dessert Cups" class="product-image">
+                </div>
+                <div class="dessertBoxes product-item" style="display: none;">
+                    <img src="Products/Cupcakes.png" alt="Cupcakes" class="product-image">
+                </div>
+                <div class="dessertBoxes product-item" style="display: none;">
+                    <img src="Products/Beehive.png" alt="Beehive" class="product-image">
+                </div>
+                <div class="dessertBoxes product-item" style="display: none;">
+                    <img src="Products/Cream Puff.png" alt="Cream Puff" class="product-image">
+                </div>
+                <div class="dessertBoxes product-item" style="display: none;">
+                    <img src="Products/Egg Tarts.png" alt="Egg Tarts" class="product-image">
+                </div>
+            
+                <!-- Drinks (Milk-based) products (hidden initially) -->
+                <div class="drinks product-item" style="display: none;">
+                    <img src="Products/Caramel.png" alt="Caramel" class="product-image">
+                </div>
+                <div class="drinks product-item" style="display: none;">
+                    <img src="Products/Matcha.png" alt="Matcha Green Tea" class="product-image">
+                </div>
+                <div class="drinks product-item" style="display: none;">
+                    <img src="Products/Milo.png" alt="Milo Dinosaur" class="product-image">
+                </div>
+                <div class="drinks product-item" style="display: none;">
+                    <img src="Products/Oreo.png" alt="Oreo" class="product-image">
+                </div>
+                <div class="drinks product-item" style="display: none;">
+                    <img src="Products/Choco Banana.png" alt="Choco Banana" class="product-image">
+                </div>
+            </div>
+            
+            <script>
+                document.addEventListener("DOMContentLoaded", () => {
+                    function showProducts(category, element) {
+                        // Remove highlight from all items
+                        const allItems = document.querySelectorAll('.menu-items .item');
+                        allItems.forEach(item => item.classList.remove('highlighted'));
+            
+                        // Add highlight to the clicked item
+                        element.classList.add('highlighted');
+            
+                        // Hide all product categories first
+                        const categories = ['miniCakes', 'snackPouches', 'dessertBoxes', 'drinks'];
+                        categories.forEach(cat => {
+                            const items = document.querySelectorAll(`.${cat}`);
+                            items.forEach(item => {
+                                item.style.display = 'none';
+                            });
+                        });
+            
+                        // Show the selected category
+                        const selectedItems = document.querySelectorAll(`.${category}`);
+                        selectedItems.forEach(item => {
+                            item.style.display = 'block';
+                        });
+            
+                        // Adjust grid layout based on category
+                        const productGrid = document.getElementById('productGrid');
+                        productGrid.className = 'products-grid'; // Reset classes
+                        if (category === 'miniCakes') {
+                            productGrid.classList.add('miniCakes-grid');
+                        } else if (category === 'snackPouches') {
+                            productGrid.classList.add('snackPouches-grid');
+                        } else if (category === 'dessertBoxes') {
+                            productGrid.classList.add('dessertBoxes-grid');
+                        } else if (category === 'drinks') {
+                            productGrid.classList.add('drinks-grid');
+                        }
+                    }
+            
+                    // Initially show Mini Cakes and highlight it
+                    const initialCategory = 'miniCakes';
+                    const initialElement = document.querySelector('.menu-items .highlighted') || 
+                                           document.querySelector(`.menu-items .item:first-child`);
+                    if (initialElement) {
+                        showProducts(initialCategory, initialElement);
+                    }
+            
+                    // Attach event listeners to menu items
+                    const menuItems = document.querySelectorAll('.menu-items .item');
+                    menuItems.forEach(item => {
+                        item.addEventListener('click', function () {
+                            showProducts(this.dataset.category, this);
+                        });
+                    });
+                });
+            </script>
+            
+            
 
         </div>
         
@@ -94,3 +255,5 @@
 
 </body>
 </html>
+
+
