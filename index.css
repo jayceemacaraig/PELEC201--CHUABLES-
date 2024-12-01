@@ -118,21 +118,6 @@ nav {
         top: 120px;
     }
 
-    > .bg1 {
-        left: 50px;
-    }
-    > .bg2 {
-        left: 350px;
-        top: 167px;
-    }
-    > .bg3 {
-        right: 550px;
-        bottom: -110px;
-    }
-    > .bg4 {
-        right: 40px;
-        bottom: -100px;
-    }
     .bg-effect {
         filter: blur(2px);
         opacity: 75%;
