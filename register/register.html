@@ -7,42 +7,54 @@
     <link rel="stylesheet" href="register.css"> 
 </head>
 <body>
+    <a class="back-button" href="../index.html">
+        <img src="Back.png" alt="Back Button" class="back-image">
+    </a>        
     <div class="main">
-        
-        <img src="logowname reg.png" alt="" height="400px" width="400px" style="display: block;">
-        <div class="login_container">
-            <h1>
-                Register
-            </h1>
-            <form>
-            
-                <div class="input-container">
-                    <input type="text" id="name" name="name" placeholder="First Name" >
-                    <input type="text" id="lastname" name="lastname" placeholder="Lastname" >
-                </div>
-
-                <div class="input-container2">
-                    <input type="text" id="number" name="Phone Number" placeholder="Phone Number" >
-                    <input type="text" id="Email" name="Email" placeholder="Email" >
-                    <input type="password" id="password" name="password" placeholder="Password" >
-                    <input type="password" id="password" name="password" placeholder="Confirm Password" >
-                    
-                </div>
-                <a href="#" class="terms-link">By signing up, you agree to our<br>
-                <span class="Terms" style="color: blue;" >Terms, Privacy Policy and Cookies Policy.</span1><br></a>
-                <button class="Reg-button">REGISTER</button>
-                
-                <hr class="acounts_container">
-            
-                <span class="ready-account-text" style="color: blue;">Already Have An Account?</span><br>
-                <button class="create-account-btn">SIGN IN</button>
-                <!-- <button class="back-button" onclick="history.back()" >Back</button> -->
-                
-
-            
-
+        <div class="logo-container">
+            <img src="logowname reg.png" alt="Chuables Logo" height="600px" width="600px">
         </div>
-        
-    </div>
+        <div class="login_container">
+            <h1>Register</h1>
+            <form>
+                <div class="input-container">
+                    <div class="name-container">
+                      <input type="text" id="name" name="name" placeholder="First Name">
+                      <input type="text" id="lastname" name="lastname" placeholder="Last Name">
+                    </div>
+                    
+                    <div class="input-group">
+                      <input type="text" id="number" name="Phone Number" placeholder="Phone Number">
+                    </div>
+                  
+                    <div class="input-group">
+                      <input type="text" id="email" name="Email" placeholder="Email">
+                    </div>
+                  
+                    <div class="input-group">
+                      <input type="password" id="password" name="password" placeholder="Password">
+                    </div>
+                  
+                    <div class="input-group">
+                      <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm Password">
+                    </div>
+                  </div>
+                  
+                  <a href="#" class="terms-link">
+                    By signing up, you agree to our<br>
+                    <span class="Terms" style="color: blue;">Terms, Privacy Policy, and Cookies Policy.</span>
+                </a>
+                
+                <a href="../Login/loginpage.html" class="Reg-button">REGISTER</a>
+                
+                <hr class="accounts_container">
+                
+                <span class="ready-account-text">Already Have An Account?</span><br>
+                
+                <a href="../Login/loginpage.html" class="create-account-btn">SIGN IN</a>
+                
+            </form>
+        </div>
+    </div>    
 </body>
 </html>
