@@ -157,92 +157,91 @@ nav {
         padding-top: 20px;            
     }
     
-    /* Promotion title text on top of the background */
+
     .promotion-title {
         font-family: 'Archivo Black', sans-serif; 
         font-size: 48px;                        
         color: #FFF1DC;                        
         text-align: center; 
-        position: absolute; /* Position it on top of the image */
-        top: 20px; /* Adjust the distance from the top */
-        width: 100%; /* Ensure it spans the width of the container */
+        position: absolute;
+        top: 20px;
+        width: 100%;
     }
-    
-    /* Promotion Container with Background and Overlay Images */
+
     .new-rectangle .promotion-container {
-        position: relative; /* This sets a relative positioning context */
-        width: 90%; /* Matches the width of the `.promotion-image` */
-        margin: 20px auto; /* Centers the container */
+        position: relative;
+        width: 90%; 
+        margin: 20px auto; 
     }
     
-    /* The larger background image */
+
     .new-rectangle .promotion-image {
-        width: 100%; /* Full width of the container */
-        height: auto; /* Maintain aspect ratio */
-        border-radius: 10px; /* Optional: Adds rounded corners */
+        width: 100%; 
+        height: auto; 
+        border-radius: 10px;
     }
     
     /* Overlay images */
     .new-rectangle .overlay-image {
-        position: absolute; /* Allows positioning relative to the `.promotion-container` */
-        top: 50%; /* Center vertically */
-        transform: translateY(-50%); /* Adjusts to perfectly center the overlay vertically */
-        width: 38%; /* Adjust size as needed */
-        height: auto; /* Maintain aspect ratio */
-        border-radius: 8px; /* Optional: Round the corners */
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 38%; 
+        height: auto;
+        border-radius: 8px;
     }
     
     .new-rectangle .overlay-image.left {
-        left: 12%; /* Position on the left side */
+        left: 12%; 
         padding-top: 80px;
     }
     
     .new-rectangle .overlay-image.right {
-        right: 12%; /* Position on the right side */
+        right: 12%;
         padding-top: 80px;
     }
     .best-sellers-container {
-        width: 100%;  /* Full container width */
+        width: 100%; 
         display: flex;
-        flex-direction: column;  /* Stack elements vertically */
-        align-items: center;  /* Center content */
+        flex-direction: column;
+        align-items: center; 
         margin-top: 20px;
         padding: 20px;
     }
     
     .best-sellers-title {
         font-family: 'Archivo Bold', sans-serif;
-        font-size: 25px; /* Adjust size as needed */
+        font-size: 25px; 
         color: #FFF1DC;
-        padding-right: 600px; /* Space from the left edge */
-        margin-bottom: 10px; /* Space between the title and images */
-        white-space: nowrap; /* Prevents text from wrapping */
+        padding-right: 600px;
+        margin-bottom: 10px;
+        white-space: nowrap;
     }
     
     .favorites-title {
         font-family: 'Archivo Black', sans-serif;
-        font-size: 40px;  /* Adjust size as needed */
+        font-size: 40px; 
         font-weight: normal;
         color: #FFF1DC;
-        text-align: left; /* Align text to the left */
-        width: 100%; /* Ensure the text takes up the full width of its container */
-        white-space: nowrap; /* Prevents text from wrapping */
+        text-align: left;
+        width: 100%;
+        white-space: nowrap; 
     }
        
     
     .best-sellers-images {
-        display: flex;  /* Arrange items horizontally */
-        justify-content: center;  /* Center items horizontally */
-        gap: 40px;  /* Space between images */
+        display: flex; 
+        justify-content: center; 
+        gap: 40px; 
     }
     
     .item {
-        text-align: center;  /* Center everything inside the item */
+        text-align: center;
     }
     
     .item img {
-        width: 250px;  /* Set a consistent size for all images */
-        height: auto;   /* Maintain aspect ratio */
+        width: 250px;
+        height: auto; 
         padding-top: 40px;
     }
         
@@ -276,7 +275,7 @@ nav {
         margin-top: -10px;                    
         justify-content: center;                
     }
-    /* Menu item styling */
+
     .menu-items .item {
         font-family: 'Archivo', sans-serif;
         font-size: 30px;                         
@@ -314,39 +313,39 @@ nav {
     }
 
     .miniCakes-grid {
-        grid-template-columns: repeat(4, 1fr); /* 4 items per row */
-        gap: 20px; /* Space between items */
+        grid-template-columns: repeat(4, 1fr); 
+        gap: 20px; 
         margin-top: 40px;
     }
 
     .snackPouches-grid {
-        grid-template-columns: repeat(3, 1fr); /* 3 items per row */
-        gap: 20px; /* Space between items */
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px; 
         margin-top: 40px;
     }
 
     .dessertBoxes-grid {
-        grid-template-columns: repeat(3, 1fr); /* 3 items per row */
-        gap: 20px; /* Space between items */
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px; 
         margin-top: 40px;
     }
 
     .dessertBoxes-grid .product-item:nth-child(4),
     .dessertBoxes-grid .product-item:nth-child(5) {
-        grid-column: span 3; /* Make each item span the full row */
-        justify-self: center; /* Center align */
+        grid-column: span 3;
+        justify-self: center;
     }
 
     .drinks-grid {
-        grid-template-columns: repeat(3, 1fr); /* 3 items per row */
+        grid-template-columns: repeat(3, 1fr);
         gap: 20px;
         margin-top: 40px;
     }
 
     .drinks-grid .product-item:nth-child(4),
     .drinks-grid .product-item:nth-child(5) {
-        grid-column: span 3; /* Span full row */
-        justify-self: center; /* Center align */
+        grid-column: span 3;
+        justify-self: center;
     }
 
 

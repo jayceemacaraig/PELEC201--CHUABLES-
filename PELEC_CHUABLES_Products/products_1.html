@@ -18,7 +18,8 @@
             <a href="../PELEC_CHUABLES_Products/products_1.html" class="navigation">PRODUCTS</a>
             <a href="../pages/html/contact.html" class="navigation">CONTACTS</a>
         </div>
-        <a href="" class="button">LOGIN <img src="../src/homepage/icons/User.png" alt="USER ICON"></a>
+        <a href="../Login/loginpage.html" class="button">LOGIN <img src="../src/homepage/icons/User.png" alt="USER ICON"></a>
+
     </nav>
 
 
@@ -152,14 +153,13 @@
             <script>
                 document.addEventListener("DOMContentLoaded", () => {
                     function showProducts(category, element) {
-                        // Remove highlight from all items
+
                         const allItems = document.querySelectorAll('.menu-items .item');
                         allItems.forEach(item => item.classList.remove('highlighted'));
             
-                        // Add highlight to the clicked item
+
                         element.classList.add('highlighted');
-            
-                        // Hide all product categories first
+
                         const categories = ['miniCakes', 'snackPouches', 'dessertBoxes', 'drinks'];
                         categories.forEach(cat => {
                             const items = document.querySelectorAll(`.${cat}`);
@@ -168,15 +168,13 @@
                             });
                         });
             
-                        // Show the selected category
                         const selectedItems = document.querySelectorAll(`.${category}`);
                         selectedItems.forEach(item => {
                             item.style.display = 'block';
                         });
             
-                        // Adjust grid layout based on category
                         const productGrid = document.getElementById('productGrid');
-                        productGrid.className = 'products-grid'; // Reset classes
+                        productGrid.className = 'products-grid';
                         if (category === 'miniCakes') {
                             productGrid.classList.add('miniCakes-grid');
                         } else if (category === 'snackPouches') {
@@ -188,7 +186,7 @@
                         }
                     }
             
-                    // Initially show Mini Cakes and highlight it
+
                     const initialCategory = 'miniCakes';
                     const initialElement = document.querySelector('.menu-items .highlighted') || 
                                            document.querySelector(`.menu-items .item:first-child`);
@@ -196,7 +194,6 @@
                         showProducts(initialCategory, initialElement);
                     }
             
-                    // Attach event listeners to menu items
                     const menuItems = document.querySelectorAll('.menu-items .item');
                     menuItems.forEach(item => {
                         item.addEventListener('click', function () {

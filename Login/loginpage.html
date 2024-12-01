@@ -4,43 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Chuables</title>
-    <link rel="stylesheet" href="loginpage.css"> 
+    <link rel="stylesheet" href="loginpage.css">
 </head>
 <body>
     <div class="main">
-        <a class="back-button" href="../index.html" onclick="history.back(); return false;">Back</a>
+        <a class="back-button" href="../index.html">
+            <img src="Back.png" alt="Back Button" class="back-image">
+        </a>        
         <div class="login_container">
-            <h1>
-                Login
-            </h1>
+            <h1>LOG IN</h1>
             <form>
                 <div class="input-container">
-                    <input type="text" id="name" name="name" placeholder="Name" >
-                    <input type="password" id="password" name="password" placeholder="Password">
+                    <input type="text" id="email" name="email" placeholder="EMAIL">
+                    <input type="password" id="password" name="password" placeholder="PASSWORD">
                 </div>
-                <a href="#" class="terms-link">By signing up, you agree to our<br>
-                <span style="color: blue; ">Terms, Privacy Policy and Cookies Policy.</span></a>
-                <button class="login-button">LOGIN</button>
-            <hr class="acounts_container">
+                <a href="#" class="terms-link">
+                    By signing up, you agree to our 
+                    <span style="color: blue;">Terms, Privacy Policy, and Cookies Policy.</span>
+                </a>
+                <button class="login-button" type="submit">LOGIN</button>
+                <div class="or-divider">OR</div>
                 <div class="social-login-container">
                     <a href="#" class="social-login-btn google">
-                    <img src="Login_icons/Google.png" alt="Google Logo">SIGN IN WITH GOOGLE </a>
+                        <img src="Login_icons/Google.png" alt="Google Logo">SIGN IN WITH GOOGLE
+                    </a>
                     <a href="#" class="social-login-btn facebook">
-                    <img src="Login_icons/Facebook F.png" alt="Facebook Logo">SIGN IN WITH FACEBOOK</a>
+                        <img src="Login_icons/Facebook F.png" alt="Facebook Logo">SIGN IN WITH FACEBOOK
+                    </a>
                     <a href="#" class="social-login-btn instagram">
-                    <img src="Login_icons/Instagram.png" alt="Instagram Logo" >SIGN IN WITH INSTAGRAM</a>
-                
+                        <img src="Login_icons/Instagram.png" alt="Instagram Logo">SIGN IN WITH INSTAGRAM
+                    </a>
                 </div>
                 <div class="no-account-container">
-                    <span class="no-account-text" style="color: blue;">Don't Have An Account?</span>
-                    <button class="create-account-btn" onclick="window.location.href='register.html';">Create Account</button>
-
+                    <span class="no-account-text">Don't Have An Account?</span>
                 </div>
-
-            
-
+                <a class="create-account-btn" href="../register/register.html">Create Account</a>
+            </form>
         </div>
-        <img src="logowname copy.png" alt="" height="400px" width="400px">
+        <img src="logowname copy.png" alt="Chuables Logo" height="600px" width="600px" class="logo-image">
     </div>
 </body>
 </html>

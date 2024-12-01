@@ -1,223 +1,192 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Lemon&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:ital,wght@0,100..900;1,100..900&family=Lemon&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 
 :root {
-    --navBackground: #1b1414; 
-    --linkColor: #fff;
-    --hoverColor: #ffcc00;
-    --activeColor: #ffcc00;
-    --buttonBackground: #fff1dc;
-    --buttonTextColor: #1b1414; 
-    --logoSize: 60px; 
-  }
+  --navBackground: #1b1414;
+  --linkColor: #fff;
+  --hoverColor: #ffcc00;
+  --activeColor: #ffcc00;
+  --buttonBackground: #8E6464;
+  --buttonHoverBackground: #c5b4b4;
+  --buttonTextColor: white;
+  --fontLemon: 'Lemon', cursive;
+  --fontArchivo: 'Archivo', sans-serif;
+}
 
-  
-.main{
-    
-    background: url(reg_icons/BACKGROUNDreg.png),linear-gradient(rgba(0, 0, 0, 0.7)100%, rgba(0, 0, 0, 0.7)100%);
-    height: 108vh;
-    margin: 0%;
-    padding: 0%;
-    background-size: 100%  cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: row;
-    
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--fontArchivo);
+  background-color: black;
+}
+
+.main {
+  background: url(reg_icons/BACKGROUNDreg.png), linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between; /* Separate logo and frame */
+  align-items: center;
+  padding: 20px;
+}
+
+.logo-container {
+  flex: 1;
+  text-align: center;
+}
+
+.login_container {
+  position: relative;
+  right: 200px; /* Adjust this value to move the frame to the right */
+  background-color: var(--navBackground);
+  border-radius: 10px;
+  width: 25%;
+  height: 70%; /* Adjusted to fit content dynamically */
+  max-width: 100%;
+  padding: 30px 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-family: var(--fontLemon);
+  font-size: 36px;
+  color: #fff;
+  margin-bottom: 20px;
 }
 
 
-.login_container{
-    background-color: #1b1414; 
-    margin-left: 15%;
-    margin-top: 5%;
-    border-radius: 10px; 
-    max-width: 100%;
-    width: 35%; 
-    height: 85%; 
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2); 
-    display: flex; 
-    flex-direction: row;
-    align-items: center;
-    padding: 10px;
-    padding-bottom: 0%;
-    margin-bottom: 0%;
-
-
-  
-    
+.input-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px; /* Space between each input group */
 }
 
-img{
-    margin-left: 10%;
-    margin-top: 10%;
-    opacity: 100%;
-    max-width: 120%;
+.name-container {
+  display: flex;
+  gap: 20px; /* Horizontal space between First and Last Name */
 }
 
-h1{
-    font-family: "lemon";
-    color: #ffffff;
-    margin-top: -95%;
-    margin-left: 3%;
-    
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 10%;
+.input-group {
+  display: flex;
+  flex-direction: column; /* Stack inputs vertically */
+  gap: 10px; /* Space between inputs in the same group */
+  width: 100%;
 }
 
-.input-container{
-    font-size: 13px;
-    margin-top: 0%;
-    padding: 20px;
-    margin-left: -48%;
-    display: flex;
-    gap: 30px;
-    width: 138%;
-    
-    
-
+.input-container input {
+  width: 100%;
+  padding: 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: #D9D9D9; /* Set background color to light gray */
 }
 
-.input-container2{
-
-    font-size: 13px;
-    flex-direction: column;
-    padding: 20px;
-    margin-left: -48%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin-top: -5%;
-    width: 138%;
-    margin-bottom: 5%;
-    
+.password-container {
+  position: relative;
+  width: 100%;
 }
 
-label {
-    display: block;
-    margin-bottom: 5px;
-    color: #000000;
+.password-container input {
+  width: 100%;
+  padding-right: 40px;
 }
 
-input[type="text"],
-input[type="password"] {
-    max-width: 100%;
-    width: 100%; 
-    padding: 10px; 
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box; 
-    color: #595959;
-    font-style: none;
+.toggle-password {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
 }
 
-.Terms{ 
 
-    align-items: center;
-    justify-content: center;
-    justify-items: center;
-    font-size: 12px;
-    margin-top: -25%;
-    text-decoration: none;
-    margin-bottom: 5%;
-    margin-left: -2%;
-  
-  }
-  
 .terms-link {
-    align-items: center;
-    justify-content: center;
-    justify-items: center;
-    margin-top: -250px; 
-    color: rgb(102, 99, 99); 
-    margin-left: 3%;
-    font-size: 13px;
-    text-decoration: none;
-  }
+  color: rgb(102, 99, 99);
+  font-size: 13px;
+  text-decoration: none;
+  margin-top: 20px;
+  display: block;
+  text-align: center; /* Centers the link horizontally */
+}
+
+.Terms {
+  color: blue;
+}
+
 
 .Reg-button {
-    background-color: #8E6464;
-    color: white;
-    max-width: 100%;
-    width: 50%; 
-    padding: 10px; 
-    border-radius: 20px;
-    box-sizing: border-box; 
-    margin-top: 5%;
-    /* margin-left: -15%; */
-    margin-bottom: 5%;
-    border:none;
-    transition: background-color 0.3s ease;
-    align-items: center;
-    justify-content: center;
-    justify-items: center;
-
+  background-color: var(--buttonBackground);
+  color: var(--buttonTextColor);
+  width: 50%;
+  padding: 12px;
+  text-decoration: none; /* Removes underline */
+  border-radius: 20px;
+  margin-top: 10px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block;
+  text-align: center;
+  margin-left: auto; /* Center button horizontally */
+  margin-right: auto; /* Center button horizontally */
 }
-.Reg-button:hover {
-    background-color: #c5b4b4;
-  }
 
-
-.acounts_container{
-    width: 100%;
-    margin-left: -26%;
-    margin-bottom: 5%;
-    align-items: center;
-    justify-content: center;
-    justify-items: center;
-
+.accounts-container {
+  text-align: center; /* Ensure the container is centered */
+  margin-top: 20px; /* Space above the "Sign In" link */
 }
 
 
 .ready-account-text {
-  
-    font-size: 12px;
-    margin-left: 7%;
-    
-    align-items: center;
-    justify-content: center;
-    justify-items: center;
-   
-  
-  }
-  
-  .create-account-btn {
-    background-color: #D9D9D9;
-    color: #696666;
-    
-    border: none;
-    border-radius: 25px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    padding: 10px;
-    margin-top: 10px;
-    /* margin-left: -15%; */
-    font-family: "Archivo";
-    width: 50%;
-    align-items: center;
-    justify-content: center;
-    justify-items: center;
-  }
-  
-  .create-account-btn:hover {
-    background-color: #0056b3;
-  }
-
-  /* .back-button {
-    flex-direction: row-reverse;
-    padding: 10px 20px;
-    background-color: #1b1414; 
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    
+  font-size: 14px;
+  color: blue;
+  text-align: center; /* Centers the text */
+  margin-top: 15px;
+  display: block; /* Ensures it's treated as a block element */
+  margin-left: auto; /* Centers the text horizontally */
+  margin-right: auto; /* Centers the text horizontally */
 }
 
-.back-button:hover {
-    background-color: #0056b3; 
-} */
+.create-account-btn {
+  background-color: #D9D9D9;
+  color: #696666;
+  text-decoration: none; /* Removes underline */
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  padding: 12px;
+  width: 50%;
+  margin-top: -10px;
+  font-family: var(--fontArchivo);
+  transition: background-color 0.3s ease;
+  display: block;
+  text-align: center;
+  margin-left: auto; /* Centers the button horizontally */
+  margin-right: auto; /* Centers the button horizontally */
+}
+
+.create-account-btn:hover {
+  background-color: #0056b3;
+}
+
+
+.back-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
