@@ -86,6 +86,10 @@
             height: 1.25rem;
         }
     }
+
+    > .mobile {
+        display: none;
+    }
 }
   
 .contact-container {
@@ -232,73 +236,12 @@ h5{
   transform: scaleX(1);
 }
 
-
-nav {
-  position: sticky;
-  top: 0;
-  background-color: #1b1414;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 1450px;
-  height: 100px;
-  box-shadow: 0px 37px 30px 0px rgba(0, 0, 0, 50%);
-  z-index: 1;
-
-  /* LOGO */
-  > img {
-      width: 92px;
-      height: 72px;
-      margin-left: 100px;
-      cursor: pointer;
-  }
-
-  /* NAVIGATION */
-  > div {
-      display: flex;
-      gap: 65px;
-      align-items: center;
-
-      > a {
-          color: white;
-          text-decoration: none;
-          font: 1.25rem 'Archivo';
-      }
-  }
-
-  /* LOGIN BUTTON */
-  > a {
-      text-decoration: none;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 0.50rem;
-      background-color: #fff1dc;
-      color: black;
-      font: bold 1rem 'Archivo';
-      width: 162px;
-      height: 36px;
-      margin-right: 100px;        
-      border-radius: 50px;
-      border: none;
-      cursor: pointer;
-      
-      > img {
-          width: 1.25rem;            
-          height: 1.25rem;
-      }
-  }
-}
-
 footer {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #1b1414;
   width: 1440px;
-  /* height: 320px; */
-  
 
   > div {
       margin-top: 50px;
@@ -332,7 +275,7 @@ footer {
       > div:nth-child(2) {
           > h1 {
               font: 600 2rem 'Archivo';
-              margin: 0;
+              margin-bottom: 20px;
           }
           > a {
               color: #fff1dc;
@@ -353,4 +296,285 @@ footer {
       padding-top: 20px;
       text-align: center;
   }
+}
+
+.menu {
+    display: none;
+    width: 300px;
+    background-color: #1b1414;
+    border-radius: 20px;
+    position: fixed;
+    z-index: 1;
+    right: 10px;
+    top: 10px;
+    .back {
+        position: absolute;
+        width: 50px;
+        top: 5px    ;
+    }
+
+    > div {
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        > img {
+        width: 150px;}
+
+        > a{
+            text-decoration: none;
+            color: white;
+            font: 1rem 'Archivo';
+            margin-bottom: 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    
+    nav {
+        width: 1014px; height: 80px;
+        
+        > img {
+            width: 72px; height: 52px;}
+
+        > div { 
+            gap: 40px;
+            > a {font-size: 1rem;}
+        }
+        
+        > a {
+            font-size: .75rem; width: 122px; height: 26px;
+            > img {width: 16px;height: 16px;}
+        }
+    }
+
+    .contact-container {
+        width: 1014px;
+        > h1 {font-size: 3.25rem;}
+    }
+
+    .input-container {margin: 10px 0; gap: 30px;}
+    #email {margin: 0;}
+    #message {width: 500px; margin: 20px 0;}
+
+    form {
+        justify-items: center;
+     > button {
+        font-size: .90rem;
+        margin: 0;
+        align-self: center;
+        width: 180px;
+    }}
+
+    .social-container {
+        width: 665px;
+        gap: 80px;
+        justify-content: center;
+
+
+        > a:nth-child(1) > img:nth-child(1) {
+            width: 120px;
+            margin-right: -15px;
+        }
+        > a > img {
+            width: 80px;
+        }
+    }
+
+    footer {
+        width: 1014px;
+
+        > div {
+            > div:nth-child(1) {
+                > img {width: 200px; height: 200px;}
+                > div {
+                    > h1 {font-size: 1.25rem;}
+                    > div > img {width: 40px; margin-left: 10px;}
+                }
+            }
+
+            > div:nth-child(2) {
+                > h1 {font-size: 1.25rem;}
+                > a {font-size: 1rem; margin-bottom: 5px;}
+            }
+        }
+        
+        > p {width: 1014px; font-size: 1rem; padding-top: 10px; margin: 0 0;}
+    }
+
+    .menu {display: none;}
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+    nav {
+        width: 768px;
+        > img {margin: 0 50px;}
+        > .desktop {display: none;}
+        > .mobile {
+            display: initial;
+            width: 50px;
+            height: 30px;
+        }
+    }
+
+    .contact-container {
+        width: 768px;
+
+        > h1 {font-size: 3rem;}
+        > h4 {font-size: 1.25rem;}
+    }
+
+    .input-container {
+        margin: 15px 0 0 0;
+        flex-direction: column;
+        
+        > input:nth-child(1) {
+            margin-bottom: 0;
+        }
+
+        >input:nth-child(2) {
+            margin-left: 0px;
+        }
+    }
+
+    form > div:nth-child(2) {
+        display: flex;
+        justify-content: center;
+        > textarea {
+        width: 430px;
+        margin: 0;
+    }}
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        > button {
+            width: 150px;
+            margin: 10px 0;
+        }
+    }
+
+    .social-container {
+        width: 460px;
+        height: 80px;
+        gap: 40px;
+
+        > a:nth-child(1) > img:nth-child(1) {width: 90px;}
+        > a > img {
+            width: 60px;
+        }
+    }
+
+    footer {
+        width: 768px;
+        
+        >div {
+            >div:nth-child(1) {
+                > img {width: 150px; height: 150px;}
+                > div {
+                    > h1 {font-size: 1rem;}
+                    > div > img {width: 25px; margin-left: 5px;}}
+            }
+
+            >div:nth-child(2) {
+                > h1 {font-size: 1.5rem;}
+                > a {font-size: 1rem; margin-bottom: 2px;}
+            }
+        }
+
+        > p {width: 768px; font-size: .75rem;}
+    }
+}
+
+@media screen and (max-width: 380px) {
+    
+    nav {
+        width: 370px;
+        height: 60px;
+
+        > img {margin: 0 20px; width: 50px; height: 40px;}
+        > .mobile {width: 30px; height: 20px;}
+    }
+
+    .contact-container {
+        width: 368px;
+        
+        > h1 {font-size: 1.5rem;}
+        > h4 {font-size: .75rem;}
+    }
+    
+
+
+    .input-container {
+        align-items: center;
+        gap: 15px;
+        > input {width: 270px; height: 30px; font-size: .75rem;}
+        > input::placeholder {font-size: .75rem;}
+    }
+    
+    
+    #message {width: 300px; font-size: .75rem;}
+    
+    form > button {width: 120px; font-size: .75rem;}
+
+    .social-container {
+        width: 300px;
+        height: 50px;
+        gap: 20px;
+        
+        > a:nth-child(1) > img:nth-child(1) {width: 60px; margin-right: 2px;}
+
+        > a > img {
+            margin-top: -5px;
+            width: 40px;
+        }
+    }
+
+    footer {
+        width: 365px;
+
+        >div {
+            flex-direction: column;
+            gap: 0px;
+         
+            >div:nth-child(1) {
+                padding-left: 100px;
+                > img {width: 100px; height: 80px;}
+                > div > h1 {
+                    margin-top: -10px;
+                }
+            }
+
+            >div:nth-child(2) {
+                > h1 {font-size: 1rem; text-align: center; margin: 10px 0;}
+                > a {font-size: .75rem;}
+            }
+        }
+
+        >p {width: 365px; font-size: .5rem; margin-top: -20px;}
+    }
+
+    .menu {
+        width: 200px;
+        
+        
+        .back {
+            width: 30px;
+        }
+
+        > div {
+            margin-bottom: 10px;
+            > img {width: 60px; margin-bottom: 5px;}
+            > a {font-size: .75rem; margin-bottom: 0px;}
+
+    
+        }
+    }
 }

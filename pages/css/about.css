@@ -244,9 +244,9 @@ footer {
         }
 
         > div:nth-child(2) {
-            > p {
+            > h1 {
                 font: 600 2rem 'Archivo';
-                margin: 0;
+                margin-bottom: 20px;
             }
             > a {
                 color: var(--primWhite);
@@ -492,7 +492,7 @@ footer {
         
         > p::after {
             font-size:.5rem;
-            content: 'Ground floor Mei Yuk Building,\A M. L. Tagarao street,\A Brgy.3 Lucena City, Quezon\A Province.';
+            content: 'Ground floor Mei Yuk Building, M. L. Tagarao street,\A Brgy.3 Lucena City, Quezon Province.';
             white-space: pre-wrap;
         }   
         > img {width: 280px; height: 100px; margin-right: 5px;}
@@ -515,7 +515,7 @@ footer {
 
             >div:nth-child(2) {
                 margin-top: 5px;
-                > h1 {font-size: 1rem; text-align: center;}
+                > h1 {font-size: 1rem; text-align: center; margin: 10px 0;}
                 > a {font-size: .75rem;}
             }
         }

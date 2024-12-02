@@ -91,7 +91,7 @@
             <a href="../../PELEC_CHUABLES_Products/products_1.html" class="navigation">PRODUCTS</a>
             <a href="../../pages/html/contact.html" class="navigation">CONTACTS</a>
 
-            <a href="" class="navigation" id="login">LOGIN</a>
+            <a href="../../Login/loginpage.html" class="navigation" id="login">LOGIN</a>
         </div>
     </div>
 
@@ -107,6 +107,11 @@
         back.addEventListener('click', () => {
             menu.style.display = 'none';
         })
+
+        window.addEventListener('resize', () => {
+            if (window.innerWidth >= 790) {
+                menu.style.display = 'none';
+            }});
     </script>
 </body>
 </html>
