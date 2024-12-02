@@ -44,7 +44,7 @@ body {
   background-color: var(--navBackground);
   border-radius: 10px;
   width: 25%;
-  height: 70%; /* Adjusted to fit content dynamically */
+  height: 78%; /* Adjusted to fit content dynamically */
   max-width: 100%;
   padding: 30px 30px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);

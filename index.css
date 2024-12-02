@@ -51,7 +51,7 @@ nav {
     width: 1450px;
     height: 100px;
     box-shadow: 0px 37px 30px 0px rgba(0, 0, 0, 50%);
-    z-index: 1;
+    z-index: 2;
 
     /* LOGO */
     > img {
@@ -166,6 +166,7 @@ nav {
 }
 
 .divider {
+    z-index: 1;
     margin-top: -50px;
     width: 1450px;
 }
@@ -180,7 +181,6 @@ nav {
     align-items: center;
     justify-content: center;
     padding: 180px 0px;
-    z-index: -1;
     gap: 69px;
 
     > div {
@@ -413,88 +413,381 @@ footer {
         text-align: center;
     }
 }
+.menu {
+    display: none;
+    width: 300px;
+    background-color: var(--primBrown);
+    border-radius: 20px;
+    position: fixed;
+    z-index: 3;
+    right: 10px;
+    top: 10px;
+    .back {
+        position: absolute;
+        width: 50px;
+        top: 5px;
+    }
 
+    > div {
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
-/* for TABLET */
-/* @media screen (max-width: 1012px;) {}
- */
+        > img {
+        width: 150px;}
 
-/* for MOBILE */
-/* @media screen (max-width: 360px;) {
+        > a{
+            text-decoration: none;
+            color: white;
+            font: 1rem 'Archivo';
+            margin-bottom: 10px;
+        }
+    }
     
-} */
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-    nav {
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 15px 30px;
-
-        > div {
-            flex-direction: row;
-            gap: 30px;
-        }
-    }
-
-    .first-frame {
-        > h1 { font-size: 2rem; }
-        > p { font-size: 1.2rem; }
-    }
-
-    .second-frame {
-        > div > h1 { font-size: 4rem; }
-        > div > p { font-size: 1.2rem; }
-    }
-
-    .fourth-frame > div {
-        width: 90%;
-        > div:nth-child(2) {
-            flex-direction: row;
-            justify-content: center;
-        }
-    }
 }
 
-/* Laptop/Desktop Styles */
-@media screen and (min-width: 1025px) {
-    nav {
-        flex-direction: row;
-        width: 1450px;
-        padding: 0 50px;
+.mobile {
+    display: none;
+}
 
-        > img { width: 92px; height: 72px; margin-left: 50px; }
+@media screen and (max-width: 1024px) {
+    
+    nav {
+        width: 1014px; height: 80px;
+        
+        > img {
+            width: 72px; height: 52px;}
+
         > div { 
-            flex-direction: row; 
-            gap: 65px; 
+            gap: 40px;
+            > a {font-size: 1rem;}
         }
-        > a { margin-right: 50px; }
+        
+        > a {
+            font-size: .75rem; width: 122px; height: 26px;
+            > img {width: 16px;height: 16px;}
+        }
     }
 
     .first-frame {
-        width: 1440px;
-        > .bg-image { 
-            display: block; 
-            position: absolute;
-            z-index: -1;
-        }
-        > h1 { font-size: 2.5rem; }
-        > p { font-size: 1.5rem; }
-    }
+        width: 1014px;
 
+        > .bg-image {width: 1014px; margin-top: -40px;}
+        > img:nth-child(2) {width: 350px; margin-top: 0;}
+        > h1 {font-size: 1.75rem;}
+        > div { width: 350px; margin-top: 10px;}
+        > p {font-size: 1.25rem; margin: 10px;}
+        > a {font-size: 2rem; width: 280px; height: 80px;}
+    }
+    
+    .divider {margin-top: -50px; width: 1024px;}
     .second-frame {
-        width: 1440px;
+        width: 1014px;
         margin-top: -110px;
-        > div > h1 { font-size: 6rem; }
-        > div > p { font-size: 1.5rem; }
+
+        > div {
+            > h1 {font-size: 4rem;}
+            > p {font-size: 1rem;}
+        }
+
+        > img {width: 400px; height: 400px;}
+    }
+    .divider2 {margin-top: -100px; width: 1024px;}
+
+    .third-frame {
+        width: 1014px;
+        margin-top: -250px;
+        > h1 {font-size: 2.5rem; top: 200px;}
+        > h2 {font-size: 2rem; top: 150px;}
+        >img {width: 1014px;}
     }
 
     .fourth-frame {
-        width: 1440px;
+        width: 1014px;
+        height: 700px;
+
         > div {
-            width: 1302px;
-            > div:nth-child(2) {
-                flex-direction: row;
-                > img:nth-child(2) { top: -20px; }
+            width: 900px;
+            height: 650px;
+
+            >div:nth-child(1) {
+                > h2 {font-size: 1.5rem;}
+                > h1 {font-size: 2.5rem;}
             }
+            > div:nth-child(2) {
+              >img {width: 180px;}
+            }
+            > p {font-size: 1.25rem;}
+            > a {width: 100px; height: 15px; font-size: .75rem;}
+        }
+    }
+
+    .fifth-frame {
+        width: 1014px;
+        height: 400px;
+        > h1 {font-size: 2.5rem; margin-bottom: 10px;}
+        > p {font-size: 1.25rem;}
+        > a {font-size: 1rem;}
+        > div > div {
+            gap: 50px;
+            > a:nth-child(1) > img {width: 120px;}
+            > a > img {width: 80px;}
+        }
+    }
+    footer {
+        width: 1014px;
+
+        > div {
+            > div:nth-child(1) {
+                > img {width: 200px; height: 200px;}
+                > div {
+                    > h1 {font-size: 1.25rem;}
+                    > div > img {width: 40px; margin-left: 10px;}
+                }
+            }
+
+            > div:nth-child(2) {
+                > h1 {font-size: 1.25rem;}
+                > a {font-size: 1rem; margin-bottom: 5px;}
+            }
+        }
+        
+        > p {width: 1014px; font-size: 1rem; padding-top: 10px; margin: 0 0;}
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    nav {
+        width: 768px;
+        > img {margin: 0 50px;}
+        > .desktop {display: none;}
+        > .mobile {
+            display: initial;
+            width: 50px;
+            height: 30px;
+        }
+    }
+
+    .first-frame {
+        width: 768px;
+
+        > .bg-image {width: 768px; height: 600px;}
+        > img:nth-child(2) {width: 200px; margin-top: 100px;}
+        > h1 {font-size: 1.5rem; margin: 10px 0;}
+        > p { font-size: 1rem;}
+        > a {font-size: 1.25rem; width: 180px; height: 70px;} 
+    }
+
+    .divider {margin-top: 10px; width: 775px;}
+    .second-frame {
+        width: 768px;
+        margin-top: -180px;
+        flex-direction: column;
+        gap: 25px;
+
+        > div {
+            > h1 {font-size: 4rem; margin-bottom: 0;}
+            > p {font-size: 1rem;}
+        }
+        >img {width: 600px; height: 400px;}
+    }
+
+    .divider2 {width: 769px; margin-top: -150px;}
+    .third-frame {
+        width: 768px;
+        margin-top: -170px;
+        > h1 {font-size: 1.75rem; top: 160px}
+        > h2 {font-size: 1.5rem; top: 120px;}
+        > img {
+            width: 769px; 
+            height: 650px;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+
+    .fourth-frame {
+        width: 768px;
+        height: 550px;
+        margin-top: -60px;
+
+        > div {
+            width: 670px;
+            height: 490px;
+            > div:nth-child(1) {
+
+                margin: 20px 0 0 40px;
+                > h2 {font-size: 1.25rem;}
+                > h1 {font-size: 2rem;}
+            }
+            > div:nth-child(2) {
+                gap: 20px;
+                > img {width: 140px;}
+            }
+            > p {font-size: 1rem; margin-top: 50px;}
+            > a {padding: 15px 20px;}
+        }
+    }
+
+    .fifth-frame {
+        width: 768px;
+        height: 340px;
+        > h1 {font-size: 1.5rem; margin-bottom: 10px;}
+        > p {text-align: center;font-size: 0; margin: 15px;}
+        > p::after {
+            content: 'For Delivery: 0946 554 2288\A Angkas sa Lucena Delivery Services';
+            white-space: pre-wrap;
+            font-size: 1rem; 
+        }
+        > a {font-size: 1rem; padding: 15px 40px;}
+        > div > div {
+            gap: 30px;
+            > a:nth-child(1) > img {width: 100px;}
+            > a > img {width: 60px;}
+        }
+    }
+
+    footer {
+        width: 768px;
+        
+        >div {
+            margin-top: 20px;
+            >div:nth-child(1) {
+                > img {width: 150px; height: 150px;}
+                > div {
+                    > h1 {font-size: 1rem;}
+                    > div > img {width: 25px; margin-left: 5px;}}
+            }
+
+            >div:nth-child(2) {
+                > h1 {font-size: 1.5rem;}
+                > a {font-size: 1rem; margin-bottom: 2px;}
+            }
+        }
+
+        > p {width: 768px; font-size: .75rem;}
+    }
+}
+
+@media screen and (max-width: 380px) {
+    
+    nav {
+        width: 370px;
+        height: 60px;
+
+        > img {margin: 0 20px; width: 50px; height: 40px;}
+        > .mobile {width: 30px; height: 20px;}
+    }
+
+    .first-frame {
+        width: 365px;
+
+        > .bg-image {width: 365px; height: 480px; margin-top: -55px;}
+        > img:nth-child(2) {width: 150px; margin-top: 20px;}
+        > h1 {font-size: 0; margin-bottom: 0;}
+        > h1::after {
+            content: 'We do customize cakes,\A cupcakes,mini cupcakes, \A buttercookies and more.';
+            white-space: pre-wrap;
+            font-size: .75rem;
+        }   
+        > div {width: 200px; height: 2px;}
+        > p {font: normal .75rem 'Archivo'}
+        > a {font: normal .6rem 'Archivo'; width: 90px; height: 40px;}
+    }
+
+    .divider {width: 370px; margin-top: 100px;}
+    .second-frame {
+        width: 365px;
+
+        > div {
+            > h1 { font-size: 2.5rem; margin-bottom: 0;}
+            > p {font-size: .75rem; line-height: 20px;}
+        }
+        > img {width: 250px; height: 200px;}
+    }
+
+    .divider2 {width: 370px; margin-top: -160px;}
+    .third-frame {
+        width: 365px;
+        margin-top: -190px;
+        .scrollable {
+            width: 365px;
+            overflow-x: auto; 
+            overflow-y: hidden;
+
+            > img {   
+                width: 500px;
+                display: inline-block;
+            }
+        }
+    }
+
+    .fourth-frame {
+        width: 365px;
+
+        > div {
+            width: 400px;
+            
+            >div:nth-child(1) {
+                align-items: center;
+                justify-items: center;
+                > h2 {font-size: .75rem;}
+                > h1 {font-size: 1rem;}
+            }
+
+            /* HINDI PA TAPOS DITOO SA MOBILEE */
+
+            >div:nth-child(2) {
+
+                gap: 10px;
+                overflow-x: auto;
+                overflow-y: hidden;
+            }
+        }
+    }
+
+
+    footer {
+        width: 365px;
+
+        >div {
+            flex-direction: column;
+            gap: 0px;
+         
+            >div:nth-child(1) {
+                padding-left: 100px;
+                > img {width: 100px; height: 80px;}
+                > div > h1 {
+                    margin-top: -10px;
+                }
+            }
+
+            >div:nth-child(2) {
+                margin-top: 5px;
+                > h1 {font-size: 1rem; text-align: center; margin: 10px 0;}
+                > a {font-size: .75rem;}
+            }
+        }
+
+        >p {width: 365px; font-size: .5rem; margin-top: -20px;}
+    }
+
+    .menu {
+        width: 200px;
+        
+        
+        .back {
+            width: 30px;
+        }
+
+        > div {
+            margin-bottom: 10px;
+            > img {width: 60px; margin-bottom: 5px;}
+            > a {font-size: .75rem; margin-bottom: 0px;}
+
+    
         }
     }
 }

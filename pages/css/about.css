@@ -431,6 +431,7 @@ footer {
         width: 768px;
         
         >div {
+            margin-top: 20px;
             >div:nth-child(1) {
                 > img {width: 150px; height: 150px;}
                 > div {
