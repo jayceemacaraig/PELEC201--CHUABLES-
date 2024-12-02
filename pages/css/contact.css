@@ -90,7 +90,7 @@
   
 .contact-container {
     position: relative;
-    z-index: -1;
+    z-index: 0;
     width: 1440px;
     background: rgb(64,49,49);
     background: linear-gradient(180deg, rgba(64,49,49,1) 0%, rgba(27,20,20,1) 100%);
