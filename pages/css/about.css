@@ -16,7 +16,7 @@
     background-color: #fff1dc73;
 }
 
-.navigation::after{
+.navigation::after {
     content: '';
     display: block;
     padding-bottom: 5px;
@@ -96,6 +96,10 @@ nav {
             width: 1.25rem;            
             height: 1.25rem;
         }
+    }
+
+    > .mobile {
+        display: none;
     }
 }
 
@@ -262,5 +266,277 @@ footer {
         width: 1440px;
         padding-top: 20px;
         text-align: center;
+    }
+}
+
+
+.menu {
+    display: none;
+    width: 300px;
+    background-color: var(--primBrown);
+    border-radius: 20px;
+    position: fixed;
+    z-index: 1;
+    right: 10px;
+    top: 10px;
+    .back {
+        position: absolute;
+        width: 50px;
+        top: 5px    ;
+    }
+
+    > div {
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        > img {
+        width: 150px;}
+
+        > a{
+            text-decoration: none;
+            color: white;
+            font: 1rem 'Archivo';
+            margin-bottom: 10px;
+        }
+    }
+    
+}
+
+@media screen and (max-width: 1024px) {
+    
+    nav {
+        width: 1014px; height: 80px;
+        
+        > img {
+            width: 72px; height: 52px;}
+
+        > div { 
+            gap: 40px;
+            > a {font-size: 1rem;}
+        }
+        
+        > a {
+            font-size: .75rem; width: 122px; height: 26px;
+            > img {width: 16px;height: 16px;}
+        }
+    }
+
+    .first-frame {
+        > .bg-image {
+            width: 1014px;
+        } 
+
+        > img:nth-child(2) {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 30px;
+        }
+        
+        >h1 {font-size: 4rem}
+        > #stars {width: 180px; margin-top:0px;}
+        > p {font-size: 1.25rem; line-height: 20px;}
+    }
+
+    .second-frame {
+        width: 1014px;
+        height: 600px;
+        > img {width: 800px; height: 500px;}
+    }
+
+    .third-frame {
+         > img {width: 1014px;}
+         > div {
+            > h1 {font-size: 3.75rem}
+            > p {font-size: 1.25rem; margin-bottom: 20px;}
+        }
+    }
+
+    .fourth-frame {
+        > h1 {font-size: 3rem; margin-bottom: 0;}
+        > p {
+            font-size: 1.25rem; 
+            margin-bottom: 30px;
+
+            > img {width: 20px; height: 20px; margin-right: 5px;}
+        }
+        > img {width: 800px; height: 300px;}
+    }
+
+    footer {
+        width: 1014px;
+
+        > div {
+            > div:nth-child(1) {
+                > img {width: 200px; height: 200px;}
+                > div {
+                    > h1 {font-size: 1.25rem;}
+                    > div > img {width: 40px; margin-left: 10px;}
+                }
+            }
+
+            > div:nth-child(2) {
+                > h1 {font-size: 1.25rem;}
+                > a {font-size: 1rem; margin-bottom: 5px;}
+            }
+        }
+        
+        > p {width: 1014px; font-size: 1rem; padding-top: 10px; margin: 0 0;}
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    nav {
+        width: 768px;
+        > img {margin: 0 50px;}
+        > .desktop {display: none;}
+        > .mobile {
+            display: initial;
+            width: 50px;
+            height: 30px;
+        }
+    }
+
+    .first-frame {
+        >.bg-image {width: 768px;}
+        > img:nth-child(2) {width: 80px; height: 80px; margin-bottom: 10px;}
+        > h1 {font-size: 2rem;}
+        > #stars {width: 120px; margin-bottom: 20px;}
+        > p {font-size: 1rem;}
+    }
+
+    .second-frame {
+        width: 768px;
+        height: 500px;
+        >img {width: 650px; height: 400px}
+    }
+
+    .third-frame {
+        > img {width: 768px;}
+        > div {
+            > h1 {font-size: 2.25rem}
+            > p {font-size: 1rem; margin-bottom: 20px;}
+        }
+    }
+
+    .fourth-frame {
+        > h1 {font-size: 1.75rem; margin-bottom: 0;}
+        > p {font-size: 1rem; margin-bottom: 30px;}
+        > img {width: 600px; height: 200px; margin-right: 5px;}
+    }
+
+    footer {
+        width: 768px;
+        
+        >div {
+            >div:nth-child(1) {
+                > img {width: 150px; height: 150px;}
+                > div {
+                    > h1 {font-size: 1rem;}
+                    > div > img {width: 25px; margin-left: 5px;}}
+            }
+
+            >div:nth-child(2) {
+                > h1 {font-size: 1.5rem;}
+                > a {font-size: 1rem; margin-bottom: 2px;}
+            }
+        }
+
+        > p {width: 768px; font-size: .75rem;}
+    }
+}
+
+@media screen and (max-width: 380px) {
+    
+    nav {
+        width: 370px;
+        height: 60px;
+
+        > img {margin: 0 20px; width: 50px; height: 40px;}
+        > .mobile {width: 30px; height: 20px;}
+    }
+
+    .first-frame {
+        > .bg-image {width: 365px;}
+        > img:nth-child(2) {display: none;}
+        > h1:nth-child(3) {margin-top: 40px;}
+        > h1 {font-size: 1.5rem;}
+        > #stars {width: 60px; margin-bottom: 5px;}
+        > p {font-size: .5rem; line-height: 10px;}
+    }
+
+    .second-frame {
+        width: 365px;
+        height: 240px;
+        >img {margin-top: 20px;width: 300px; height: 200px;}
+    }
+
+    .third-frame {
+        > img {width: 365px;}
+        > div {
+            > h1 {font-size: 2rem; margin-bottom: 5px;}
+            > p {font-size:.5rem; margin-bottom: 10px;}
+        }
+    }
+
+    .fourth-frame {
+        > h1 {font-size: 1.25rem; margin-bottom: 5px;}
+        > p {
+            margin-bottom: 10px;
+            font-size: 0;
+            text-align: center;
+            > img {display: none;}
+        }
+        
+        > p::after {
+            font-size:.5rem;
+            content: 'Ground floor Mei Yuk Building,\A M. L. Tagarao street,\A Brgy.3 Lucena City, Quezon\A Province.';
+            white-space: pre-wrap;
+        }   
+        > img {width: 280px; height: 100px; margin-right: 5px;}
+    }
+
+    footer {
+        width: 365px;
+
+        >div {
+            flex-direction: column;
+            gap: 0px;
+         
+            >div:nth-child(1) {
+                padding-left: 100px;
+                > img {width: 100px; height: 80px;}
+                > div > h1 {
+                    margin-top: -10px;
+                }
+            }
+
+            >div:nth-child(2) {
+                margin-top: 5px;
+                > h1 {font-size: 1rem; text-align: center;}
+                > a {font-size: .75rem;}
+            }
+        }
+
+        >p {width: 365px; font-size: .5rem; margin-top: -20px;}
+    }
+
+    .menu {
+        width: 200px;
+        
+        
+        .back {
+            width: 30px;
+        }
+
+        > div {
+            margin-bottom: 10px;
+            > img {width: 60px; margin-bottom: 5px;}
+            > a {font-size: .75rem; margin-bottom: 0px;}
+
+    
+        }
     }
 }
