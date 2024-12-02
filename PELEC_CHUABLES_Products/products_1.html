@@ -17,9 +17,9 @@
             <a href="../blog-main.html" class="navigation">BLOG</a>
             <a href="../PELEC_CHUABLES_Products/products_1.html" class="navigation">PRODUCTS</a>
             <a href="../pages/html/contact.html" class="navigation">CONTACTS</a>
+            <img src="icons&picturesbg/Hamburger.png" alt="HAMBURGER" class="mobile">
         </div>
         <a href="../Login/loginpage.html" class="button">LOGIN <img src="../src/homepage/icons/User.png" alt="USER ICON"></a>
-
     </nav>
 
 
@@ -250,7 +250,25 @@
             <p>© 2024 Chuables Bakeshop. All right reserved. | Privacy Policy</p>
         </footer> 
 
+    <script>
+        const menu = document.querySelector('.menu');
+        const back = document.querySelector('.back');
+        const mobile = document.querySelector('.mobile');
+
+        mobile.addEventListener('click', () => {
+            menu.style.display = 'initial';
+        })
+
+        back.addEventListener('click', () => {
+            menu.style.display = 'none';
+        })
+
+        window.addEventListener('resize', () => {
+            if (window.innerWidth >= 790) {
+                menu.style.display = 'none';
+            }});
+
+    </script>
+
 </body>
 </html>
-
-

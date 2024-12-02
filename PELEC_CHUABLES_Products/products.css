@@ -503,3 +503,52 @@ nav {
     }
     
 }
+
+@media screen and (max-width: 380px){
+ 
+    nav {
+        width: 370px;
+        height: 60px;
+
+        > img {margin-bottom: 10px; margin-left: 10px; width: 50px; height: 40px;}
+        > .mobile {width: 30px; height: 20px;}
+
+    }
+
+    .first-frame{
+        > .bg-image {
+        width: 500px;
+        height: 500px;
+        }
+        > img:nth-child(2){
+        display: block; /* Make sure the logo is visible on mobile */
+        width: 200px; /* Adjust the width of the logo as needed */
+        height: auto; /* Maintain the aspect ratio */
+        margin-top: 100px; /* Adjust margin if needed */
+        padding-right: 50px;
+        }
+        > h1:nth-child(3) {margin-top: 30px;padding-right: 50px;}
+        > h1 {font-size: 4rem;}
+        > #stars {width: 60px; margin-bottom: 5px;}
+        > p {font-size: .5rem; line-height: 10px;}
+        >.new-rectangle {
+            width: 100%;              /* Full width on mobile */
+            height: auto;             /* Automatically adjust height */
+            background-color: #403131;
+            position: relative;
+            margin-top: 30px;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 10px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            padding-top: 20px;
+        }
+        >.promotion-title{
+                font-size: 20px;
+        }
+    }
+}
