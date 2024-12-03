@@ -589,7 +589,7 @@ footer {
 
         > div {
             > h1 {font-size: 4rem; margin-bottom: 0;}
-            > p {font-size: 1rem;}
+            > p {font-size: 1rem; line-height: 25px;}
         }
         >img {width: 600px; height: 400px;}
     }
@@ -675,7 +675,7 @@ footer {
 @media screen and (max-width: 380px) {
     
     nav {
-        width: 370px;
+        width: 375px;
         height: 60px;
 
         > img {margin: 0 20px; width: 50px; height: 40px;}
@@ -683,10 +683,10 @@ footer {
     }
 
     .first-frame {
-        width: 370px;
+        width: 375px;
 
-        > .bg-image {width: 370px; height: 480px; margin-top: -55px;}
-        > img:nth-child(2) {width: 150px; margin-top: 20px;}
+        > .bg-image {width: 375px; height: 480px; margin-top: -55px;}
+        > img:nth-child(2) {width: 150px; margin-top: 50px;}
         > h1 {font-size: 0; margin-bottom: 0;}
         > h1::after {
             content: 'We do customize cakes,\A cupcakes,mini cupcakes, \A buttercookies and more.';
@@ -698,10 +698,12 @@ footer {
         > a {font: normal .6rem 'Archivo'; width: 90px; height: 40px;}
     }
 
-    .divider {width: 375px; margin-top: 90px;}
+    .divider {width: 377px; margin-top: 40px; z-index: 1;}
     .second-frame {
         width: 365px;
-
+        height: 140px;
+        margin-top: -30px;
+    
         > div {
             > h1 { font-size: 2.5rem; margin-bottom: 0;}
             > p {font-size: .75rem; line-height: 20px;}
@@ -709,27 +711,42 @@ footer {
         > img {width: 250px; height: 200px;}
     }
 
-    .divider2 {width: 375px; margin-top: -160px;}
+    .divider2 {width: 375px; margin-top: 50px;}
     .third-frame {
-        width: 365px;
+        width: 375px;
         margin-top: -190px;
+
+        > h1 {font-size: 1.25rem; top: 150px;}
+        > h2 {font-size: 0; top: 135px;}
+        > h2::after {
+            content: 'Sweeten the Day\A  for Our Sweet Teachers!';
+            white-space: pre-wrap;
+            font-size: 1rem;
+
+        }
         .scrollable {
             width: 365px;
             overflow-x: auto; 
             overflow-y: hidden;
+            background-color: #1b1414;
+            margin-left: 5px;
+            
 
+            
             > img {   
-                width: 500px;
                 display: inline-block;
+                margin-left: -80px;
+                object-fit: scale-down;
+                width: 800px;
             }
         }
     }
 
     .fourth-frame {
-        width: 365px;
-
+        width: 375px;
+        margin-top: -100px;
         > div {
-            width: 400px;
+            width: 300px;
             
             >div:nth-child(1) {
                 align-items: center;
@@ -738,24 +755,55 @@ footer {
                 > h1 {font-size: 1rem;}
             }
 
-            /* HINDI PA TAPOS DITOO SA MOBILEE */
-
             >div:nth-child(2) {
-
-                gap: 10px;
+                width: 200px;
+                height: 250px;
+                gap: 30px;
+                overflow-x: auto;
+                overflow-y: hidden;
+                > img:nth-child(1) {margin-left: 25px;}
+                > img {width: 150px; object-fit: contain;}
+                > img:nth-child(3) {margin-right: 25px;}
             }
+
+            > p { font-size : 0; margin-top: 0;}
+            > P::after {
+                font-size: 1rem;
+                content: 'Our mini cakes are a \A customer favorite, offering the \A perfect blend of flavor and \A charm for any occasion!';
+                white-space: pre-wrap;
+            }
+            > a {padding: 10px 15px; margin-top: 20px;}
         }
     }
 
     .fifth-frame {
-        width: 370px;
-        height: 240px;
+        width: 375px;
+        height: 250px;
         gap: 0px;
-        > h1 {font-size: 1.25rem; margin-bottom: ;}
+
+        > h1 {font-size: 1.5rem; margin-bottom: 5px;}
+        > p::after {font-size: 1rem;}
+        > a {padding: 10px 20px; font-size: .75rem;}
+        > div {
+            > p {font-size: .75rem; margin-left: 10px;}
+            > div {
+                overflow-x: auto;
+                align-items: center;
+                width: 200px;
+                height: 60px;
+                gap: 30px;
+                padding: 0 0;
+
+                > a:nth-child(1) > img {width: 80px; margin-left: 20px;}
+                > a > img {width: 50px;}
+                > a:nth-child(4) > img {margin-right: 20px;}
+            }
+        }
     }
 
     footer {
-        width: 370px;
+        width: 375px;
+        
 
         >div {
             flex-direction: column;
