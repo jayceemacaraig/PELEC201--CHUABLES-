@@ -96,6 +96,10 @@ nav {
             height: 1.25rem;
         }
     }
+
+    > .mobile {
+        display: none;
+    }
 }
 
 
@@ -125,33 +129,35 @@ nav {
             align-self: center;
         }
 
-        > a > img {
+        > div > a > img {
             width: 674px;
             height: 483px;
         }
         
-        > #button {
+        #button {
+            align-self: center;
             text-decoration: none;
             font: bold 2rem 'Archivo';
             color: white;
-            align-self: center;
             transition: 0.2s ease;
         }
     
-        > #button:hover {
+        #button:hover {
             border: 1px solid var(--primWhite);
             border-radius: 25px;
             padding: 10px 20px;
         }
     
     
-        >p {
+        > div > p {
             color: white;
             font-size: 1.5rem;
+
         }
     
-        >p>span{
+        > div > p > span{
             font: bold 2.5rem 'Archivo';
+            
         }
     }
     
@@ -167,22 +173,27 @@ nav {
             align-self: center;
         }
         
-        > a {
-            text-decoration: none;
-            border-bottom: 1px solid white;
-            padding-bottom: 20px;
-            > div {
-                display: flex;
-                gap: 25px;
-
-                > p {
-                    font: bold 1.5rem 'Archivo';
-                    color: white;
-                }
-                
-                >img {
-                    width: 177px;
-                    height: 125px;
+        > div {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            > a {
+                text-decoration: none;
+                border-bottom: 1px solid white;
+                padding-bottom: 20px;
+                > div {
+                    display: flex;
+                    gap: 25px;
+    
+                    > p {
+                        font: bold 1.5rem 'Archivo';
+                        color: white;
+                    }
+                    
+                    >img {
+                        width: 177px;
+                        height: 125px;
+                    }
                 }
             }
         }
@@ -249,5 +260,313 @@ footer {
         width: 1440px;
         padding-top: 20px;
         text-align: center;
+    }
+}
+
+.menu {
+    display: none;
+    width: 300px;
+    background-color: #1b1414;
+    border-radius: 20px;
+    position: fixed;
+    z-index: 1;
+    right: 10px;
+    top: 10px;
+    .back {
+        position: absolute;
+        width: 50px;
+        top: 5px    ;
+    }
+
+    > div {
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        > img {
+        width: 150px;}
+
+        > a{
+            text-decoration: none;
+            color: white;
+            font: 1rem 'Archivo';
+            margin-bottom: 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    
+    nav {
+        width: 1014px; height: 80px;
+        
+        > img {
+            width: 72px; height: 52px;}
+
+        > div { 
+            gap: 40px;
+            > a {font-size: 1rem;}
+        }
+        
+        > a {
+            font-size: .75rem; width: 122px; height: 26px;
+            > img {width: 16px;height: 16px;}
+        }
+    }
+
+    .container {
+        width: 1014px;
+    
+        > div:nth-child(1)  {
+                padding: 10px;
+                margin: 10px;
+                display: flex;
+
+            > h1 {font-size: 1.5rem;}
+            #image { width: 400px; height: 350px; margin: 0 50px;}
+
+            > div > p {
+                width: 400px;
+                font-size: 1rem;
+                margin: 5px 50px;
+            
+                > span {
+                    font-size: 1.75rem;
+                }
+            }
+            #button {
+                margin-top: 10px;
+                font-size: 1.5rem;
+            }
+        }
+        > div:nth-child(2) {
+            gap: 15px;
+            > h1 {font-size: 1.5rem; margin-top: 40px;}
+
+            >div{ 
+                gap: 15px;
+                > a {
+                    padding-bottom: 20px;
+                
+                > div {
+                    align-items: center;
+                    > p {font-size: 1.25rem; ;}
+                    > img {width: 125px; height: 100px;}
+                }
+                }
+            }
+        }
+    }
+
+    footer {
+        width: 1014px;
+
+        > div {
+            > div:nth-child(1) {
+                > img {width: 200px; height: 200px;}
+                > div {
+                    > h1 {font-size: 1.25rem;}
+                    > div > img {width: 40px; margin-left: 10px;}
+                }
+            }
+
+            > div:nth-child(2) {
+                > h1 {font-size: 1.25rem;}
+                > a {font-size: 1rem; margin-bottom: 5px;}
+            }
+        }
+        
+        > p {width: 1014px; font-size: 1rem; padding-top: 10px; margin: 0 0;}
+    }
+
+    .menu {display: none;}
+}
+
+@media screen and (max-width: 768px) {
+
+    nav {
+        width: 768px;
+        > img {margin: 0 50px;}
+        > .desktop {display: none;}
+        > .mobile {
+            display: initial;
+            width: 50px;
+            height: 30px;
+        }
+    }
+
+    .container {
+        padding: 0;
+        width: 768px;
+        flex-direction: column;
+
+        > div:nth-child(1) {
+            border-right: 0;
+            border-bottom: 1px solid var(--primWhite);
+
+            > h1 {align-self: baseline; margin-bottom: 30px;}
+            > div {
+                display: flex;
+                flex-direction: row;
+                gap: 40px;
+
+                > p {margin: 0;} 
+            }
+            #image {
+                width: 400px;
+                height: 300px;
+                margin: 0;
+            }
+            
+            #button {
+                margin: 20px 0;
+            }
+        }
+
+        > div:nth-child(2) {
+            padding: 0 70px;
+            > h1 {margin: 20px 0 0 0;}
+        }
+    }
+    
+
+    footer {
+        width: 768px;
+        
+        >div {
+            >div:nth-child(1) {
+                > img {width: 150px; height: 150px;}
+                > div {
+                    > h1 {font-size: 1rem;}
+                    > div > img {width: 25px; margin-left: 5px;}}
+            }
+
+            >div:nth-child(2) {
+                > h1 {font-size: 1.5rem;}
+                > a {font-size: 1rem; margin-bottom: 2px;}
+            }
+        }
+
+        > p {width: 768px; font-size: .75rem;}
+    }
+}
+
+@media screen and (max-width: 380px) {
+    
+    nav {
+        width: 375px;
+        height: 60px;
+
+        > img {margin: 0 20px; width: 50px; height: 40px;}
+        > .mobile {width: 30px; height: 20px;}
+    }
+
+    .container {
+        width: 375px;
+
+        > div:nth-child(1) {
+
+            > h1 {font-size: 1.5rem; align-self: center; margin-bottom: 20px;}
+            > div {
+                flex-direction: column;
+                align-items: center;
+                gap: 0;
+
+                > p > span {font-size: 1.5rem;}
+                > p {font-size: 0; text-align: center; width: 320px;}
+                > p::after {
+
+                    content: 'If you’re a cake enthusiast, you’ve likely heard of Chuables, a charming bakeshop that has quickly gained a reputation for its delicious and beautifully crafted cakes.';
+                    white-space: pre-wrap;
+                    font: 600 .75rem 'Archivo';
+                }
+            }
+            #image {
+                width: 300px;
+                height: 240px;
+            }
+            #button {
+                font-size: 1.25rem;
+            }
+        }
+
+        >div:nth-child(2) {
+            width: 375px;
+            padding: 0;
+            display: flex;
+            gap: 10px;
+            
+            > h1 {
+                align-self: baseline;
+                font-size: 1.25rem;
+                margin-left: 20px;
+            }
+            > h1::after {
+                content: 'SWIPE';
+                font-size: 1rem;
+                margin-left: 100px;
+            }
+
+            >div {
+                margin: 0 20px;
+                display: flex;
+                flex-direction: row;
+                overflow-x: auto;
+                gap: 60px;
+
+                > a:nth-child(1) {margin-left: 70px;}
+                > a {
+                    padding-bottom: 10px;
+                    > div {
+                        gap: 10px;
+                        >img {width: 100px; height: 85px;}
+                        > p {font-size: .75rem; width: 100px;}
+                    }
+                }
+                > a:nth-child(4) {margin-right: 70px;}
+            }
+        }
+    }
+
+    footer {
+        width: 375px;
+
+        >div {
+            flex-direction: column;
+            gap: 0px;
+         
+            >div:nth-child(1) {
+                padding-left: 100px;
+                > img {width: 100px; height: 80px;}
+                > div > h1 {
+                    margin-top: -10px;
+                }
+            }
+
+            >div:nth-child(2) {
+                > h1 {font-size: 1rem; text-align: center; margin: 10px 0;}
+                > a {font-size: .75rem;}
+            }
+        }
+
+        >p {width: 365px; font-size: .5rem; margin-top: -20px;}
+    }
+
+    .menu {
+        width: 200px;
+        
+        
+        .back {
+            width: 30px;
+        }
+
+        > div {
+            margin-bottom: 10px;
+            > img {width: 60px; margin-bottom: 5px;}
+            > a {font-size: .75rem; margin-bottom: 0px;}
+
+    
+        }
     }
 }
