@@ -500,7 +500,7 @@ footer {
         margin-top: -250px;
         > h1 {font-size: 2.5rem; top: 200px;}
         > h2 {font-size: 2rem; top: 150px;}
-        >img {width: 1014px;}
+        >.scrollable > img {width: 1014px;}
     }
 
     .fourth-frame {
@@ -600,12 +600,13 @@ footer {
         margin-top: -170px;
         > h1 {font-size: 1.75rem; top: 160px}
         > h2 {font-size: 1.5rem; top: 120px;}
-        > img {
+        > .scrollable > img {
             width: 769px; 
             height: 650px;
             object-fit: cover;
             object-position: center;
         }
+        
     }
 
     .fourth-frame {
@@ -682,9 +683,9 @@ footer {
     }
 
     .first-frame {
-        width: 365px;
+        width: 370px;
 
-        > .bg-image {width: 365px; height: 480px; margin-top: -55px;}
+        > .bg-image {width: 370px; height: 480px; margin-top: -55px;}
         > img:nth-child(2) {width: 150px; margin-top: 20px;}
         > h1 {font-size: 0; margin-bottom: 0;}
         > h1::after {
@@ -697,7 +698,7 @@ footer {
         > a {font: normal .6rem 'Archivo'; width: 90px; height: 40px;}
     }
 
-    .divider {width: 370px; margin-top: 100px;}
+    .divider {width: 375px; margin-top: 90px;}
     .second-frame {
         width: 365px;
 
@@ -708,7 +709,7 @@ footer {
         > img {width: 250px; height: 200px;}
     }
 
-    .divider2 {width: 370px; margin-top: -160px;}
+    .divider2 {width: 375px; margin-top: -160px;}
     .third-frame {
         width: 365px;
         margin-top: -190px;
@@ -742,15 +743,19 @@ footer {
             >div:nth-child(2) {
 
                 gap: 10px;
-                overflow-x: auto;
-                overflow-y: hidden;
             }
         }
     }
 
+    .fifth-frame {
+        width: 370px;
+        height: 240px;
+        gap: 0px;
+        > h1 {font-size: 1.25rem; margin-bottom: ;}
+    }
 
     footer {
-        width: 365px;
+        width: 370px;
 
         >div {
             flex-direction: column;
@@ -771,7 +776,7 @@ footer {
             }
         }
 
-        >p {width: 365px; font-size: .5rem; margin-top: -20px;}
+        >p {width: 370px; font-size: .5rem; margin-top: -20px;}
     }
 
     .menu {
