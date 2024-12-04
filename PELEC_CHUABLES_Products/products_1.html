@@ -17,12 +17,23 @@
             <a href="../blog-main.html" class="navigation">BLOG</a>
             <a href="../PELEC_CHUABLES_Products/products_1.html" class="navigation">PRODUCTS</a>
             <a href="../pages/html/contact.html" class="navigation">CONTACTS</a>
-            <img src="icons&picturesbg/Hamburger.png" alt="HAMBURGER" class="mobile">
         </div>
         <a href="../Login/loginpage.html" class="button">LOGIN <img src="../src/homepage/icons/User.png" alt="USER ICON"></a>
+        <img src="../../src/aboutpage/icons/MENU.png" alt="HAMBURGER" class="mobile">
     </nav>
 
-
+    <div class="menu">
+        <img src="../../src/aboutpage/icons/BACK.png" alt="BACK" class="back">
+        <div>
+            <img src="../../src/aboutpage/images/LOGO W NAME.png" alt="">
+            <a href="../../index.html" class="navigation">HOME</a>
+            <a href="../../pages/html/about.html" class="navigation">ABOUT</a>
+            <a href="../../blog-main.html" class="navigation">BLOGS</a>
+            <a href="../../PELEC_CHUABLES_Products/products_1.html" class="navigation">PRODUCTS</a>
+            <a href="../../pages/html/contact.html" class="navigation">CONTACTS</a>
+            <a href="../../Login/loginpage.html" class="navigation" id="login">LOGIN</a>
+        </div>
+    </div>
 
     <section class="first-frame">
         <img class="bg-image main-bg" src="icons&picturesbg/Chuables.png" alt="BACKGROUND">
@@ -39,10 +50,8 @@
                 <img class="overlay-image right" src="Products/Promotion_Image 2.png" alt="Right Overlay Image">
             </div>
             <div class="best-sellers-container">
-                <div class="best-sellers-title">
-                    Best Sellers
-                    <div class="favorites-title">CHUABLES FAVORITES</div>
-                </div>
+                <div class="best-sellers-title">Best Sellers</div>
+                <div class="favorites-title">CHUABLES FAVORITES</div>
                 <div class="best-sellers-images">
                     <div class="item">
                         <img src="Products/Strawberry_Castella.png" alt="Strawberry Castella">
@@ -202,11 +211,8 @@
                     });
                 });
             </script>
-            
-            
 
         </div>
-        
     
         <section class="second-frame">
             <h1>Contact Us</h1>
@@ -222,7 +228,7 @@
                 </div>
             </div>
         </section>
-        
+
         <footer>
             <div>
                 <div>
@@ -246,29 +252,26 @@
                     <a href="../pages/html/contact.html" class="navigation">CONTACTS</a>
                 </div>
             </div>
-            
-            <p>© 2024 Chuables Bakeshop. All right reserved. | Privacy Policy</p>
+                <p>© 2024 Chuables Bakeshop. All right reserved. | Privacy Policy</p>
         </footer> 
-
-    <script>
-        const menu = document.querySelector('.menu');
-        const back = document.querySelector('.back');
-        const mobile = document.querySelector('.mobile');
-
-        mobile.addEventListener('click', () => {
-            menu.style.display = 'initial';
-        })
-
-        back.addEventListener('click', () => {
-            menu.style.display = 'none';
-        })
-
-        window.addEventListener('resize', () => {
-            if (window.innerWidth >= 790) {
+        <script>
+            const menu = document.querySelector('.menu');
+            const back = document.querySelector('.back');
+            const mobile = document.querySelector('.mobile');
+    
+            mobile.addEventListener('click', () => {
+                menu.style.display = 'initial';
+            })
+    
+            back.addEventListener('click', () => {
                 menu.style.display = 'none';
-            }});
-
-    </script>
-
+            })
+    
+            window.addEventListener('resize', () => {
+                if (window.innerWidth >= 790) {
+                    menu.style.display = 'none';
+                }});
+        </script>
+        
 </body>
 </html>
