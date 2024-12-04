@@ -496,7 +496,7 @@ footer {
 @media screen and (max-width: 380px) {
     
     nav {
-        width: 370px;
+        width: 375px;
         height: 60px;
 
         > img {margin: 0 20px; width: 50px; height: 40px;}
@@ -504,7 +504,7 @@ footer {
     }
 
     .contact-container {
-        width: 368px;
+        width: 375px;
         
         > h1 {font-size: 1.5rem;}
         > h4 {font-size: .75rem;}
@@ -538,7 +538,7 @@ footer {
     }
 
     footer {
-        width: 365px;
+        width: 375px;
 
         >div {
             flex-direction: column;
