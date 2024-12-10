@@ -197,5 +197,241 @@ input[type="password"] {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 16px;
+}
+
+.back-image {
+    width: 100px;
+}
+
+@media screen and (max-width: 1024px) {   
+    .login_container {
+        width: 55%;
+        height: auto;
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+        text-align: center;
+        padding-right: 0;
+    }
+
+    .input-container {
+        gap: 10px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .login-button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .or-divider {
+        font-size: 14px;
+    }
+
+    .social-login-btn {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .social-login-btn img {
+        width: 18px;
+        height: 18px;
+    }
+
+    .no-account-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .create-account-btn {
+        font-size: 12px;
+        padding: 8px 16px;
+        max-width: 90px;
+    }
+
+    .logo-image {
+        width: 500px; /* Adjust based on your desired size */
+        height: 500px; /* Adjust based on your desired size */
+        padding-right: 0;
+    }
+
+    .back-button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+
+    .login_container {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+        margin-top: 10px;
+        border-radius: 5px;
+    }
+
+    h1 {
+        font-size: 24px;
+        text-align: center;
+        padding-right: 0;
+    }
+
+    .input-container {
+        gap: 8px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .terms-link {
+        font-size: 12px;
+    }
+
+    .login-button {
+        font-size: 14px;
+        padding: 10px;
+        border-radius: 20px;
+    }
+
+    .or-divider {
+        font-size: 12px;
+    }
+
+    .or-divider:before,
+    .or-divider:after {
+        height: 0.5px;
+    }
+
+    .social-login-btn {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .social-login-btn img {
+        width: 16px;
+        height: 16px;
+    }
+
+    .no-account-container {
+        text-align: center;
+    }
+
+    .no-account-text {
+        font-size: 12px;
+    }
+
+    .create-account-btn {
+        font-size: 12px;
+        padding: 6px 12px;
+        max-width: 100px;
+        margin: 0 auto;
+    }
+
+    .back-button {
+        font-size: 12px;
+        padding: 6px 12px;
+        top: 10px;
+        right: 10px;
+    }
+
+    .logo-image {
+        display: none;
+    }
+}
+    
+
+@media screen and (max-width: 768px) {
+    .login_container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        height: auto;
+        padding: 15px;
+    }
+    
+
+    h1 {
+        font-size: 28px;
+        text-align: center;
+        padding-right: 0;
+    }
+
+    .input-container {
+        gap: 10px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .terms-link {
+        font-size: 12px;
+    }
+
+    .login-button {
+        font-size: 14px;
+        padding: 12px;
+        border-radius: 20px;
+    }
+
+    .or-divider {
+        font-size: 14px;
+    }
+
+    .or-divider:before,
+    .or-divider:after {
+        height: 1px;
+    }
+
+    .social-login-btn {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .social-login-btn img {
+        width: 18px;
+        height: 18px;
+    }
+
+    .no-account-container {
+        text-align: center;
+    }
+
+    .no-account-text {
+        font-size: 14px;
+    }
+
+    .create-account-btn {
+        font-size: 14px;
+        padding: 8px 16px;
+        max-width: 120px;
+        margin: 0 auto;
+    }
+
+    .back-button {
+        font-size: 14px;
+        padding: 8px 16px;
+        top: 15px;
+        right: 15px;
+    }
+
+    .logo-image {
+        display: none;
+    }
 }
