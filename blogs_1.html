@@ -11,21 +11,22 @@
     <!-- NAVIGATION BAR -->
     <nav>
         <img src="src/homepage/images/LOGO.png" alt="CHUABLES LOGO">
-        <div>
+        <div class='desktop'>
             <a href="index.html" class="navigation">HOME</a>
             <a href="pages/html/about.html" class="navigation">ABOUT</a>
             <a href="blog-main.html" class="navigation">BLOG</a>
             <a href="PELEC_CHUABLES_Products/products_1.html" class="navigation">PRODUCTS</a>
             <a href="pages/html/contact.html" class="navigation">CONTACTS</a>
         </div>
-        <a href="../../Login/loginpage.html" class="button">LOGIN <img src="src/homepage/icons/User.png" alt="USER ICON"></a>
+        <a href="Login/loginpage.html" class="button desktop">LOGIN <img src="src/homepage/icons/User.png" alt="USER ICON"></a>
+        <img src="src/aboutpage/icons/MENU.png" alt="HAMBURGER" class="mobile">
     </nav>
 
      <!-- BLOG CONTENT -->
      <section class="blog-content">
         <!-- TOP BUTTONS -->
         <div class="nav-buttons">
-            <a href="blog-main.html"><button class="back-btn">RETURN TO BLOGS</button></a>
+            <a href="blog-main.html" class="return-blog-1"><button class="back-btn return-blog">RETURN TO BLOGS</button></a>
             <div class="update-label">CHUABLES: UPDATE</div>
             <a href="blogs_2.html"><button class="next-btn">NEXT</button></a>
         </div>
@@ -57,7 +58,7 @@
 
         <!-- BOTTOM BUTTONS -->
         <div class="nav-buttons">
-            <a href="blog-main.html"><button class="back-btn">RETURN TO BLOGS</button></a>
+            <a href="blog-main.html" class="return-blog-1"><button class="back-btn return-blog">RETURN TO BLOGS</button></a>
             <a href="blogs_2.html"><button class="next-btn">NEXT</button></a>
         </div>
     </section>
@@ -90,5 +91,38 @@
         
         <p>© 2024 Chuables Bakeshop. All right reserved. | Privacy Policy</p>
     </footer>
+
+    <div class="menu">
+        <img src="src/aboutpage/icons/BACK.png" alt="BACK" class="back">
+        <div>
+            <img src="src/aboutpage/images/LOGO W NAME.png" alt="">
+            <a href="index.html" class="navigation">HOME</a>
+            <a href="pages/html/about.html" class="navigation">ABOUT</a>
+            <a href="blog-main.html" class="navigation">BLOGS</a>
+            <a href="PELEC_CHUABLES_Products/products_1.html" class="navigation">PRODUCTS</a>
+            <a href="pages/html/contact.html" class="navigation">CONTACTS</a>
+
+            <a href="Login/loginpage.html" class="navigation" id="login">LOGIN</a>
+        </div>
+    </div>
+
+    <script>
+        const menu = document.querySelector('.menu');
+        const back = document.querySelector('.back');
+        const mobile = document.querySelector('.mobile');
+
+        mobile.addEventListener('click', () => {
+            menu.style.display = 'initial';
+        })
+
+        back.addEventListener('click', () => {
+            menu.style.display = 'none';
+        })
+
+        window.addEventListener('resize', () => {
+            if (window.innerWidth >= 790) {
+                menu.style.display = 'none';
+            }});
+    </script>
 </body>
 </html>
