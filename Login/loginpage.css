@@ -197,6 +197,7 @@ input[type="password"] {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  z-index: 5;
 }
 
 .back-image {
@@ -342,8 +343,9 @@ input[type="password"] {
     .back-button {
         font-size: 12px;
         padding: 6px 12px;
-        top: 10px;
-        right: 10px;
+        margin-right: -50px;
+        
+        > img {width: 70px;}
     }
 
     .logo-image {
@@ -425,10 +427,11 @@ input[type="password"] {
     }
 
     .back-button {
+        margin-top: 20px;
         font-size: 14px;
         padding: 8px 16px;
         top: 15px;
-        right: 15px;
+        right: 60px;
     }
 
     .logo-image {

@@ -201,6 +201,7 @@ h1 {
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
+  z-index: 5;
 }
 
 
@@ -251,7 +252,7 @@ h1 {
       font-size: 14px;
       padding: 8px 16px;
       top: 15px;
-      left: 15px;
+      margin-left: 50px;
   }
 
 
@@ -314,5 +315,19 @@ h1 {
       padding: 8px 14px;
       top: 10px;
       left: 10px;
+      margin-top: 10px;
+  }
+}
+
+
+@media screen and (max-width: 380px) {
+
+  .back-button {
+      font-size: 14px;
+      padding: 8px 14px;
+      top: 10px;
+      left: -25px;
+      
+      > img {width: 70px;}
   }
 }
