@@ -134,7 +134,7 @@ nav > a > img {
     
     > .main-bg {
         top: 100px;
-        width: 100%;
+        width: 75%;
     }
     h1 {
         font-family: 'Archivo', sans-serif;
@@ -1041,6 +1041,7 @@ footer > p {
 
 @media screen and (max-width: 1024px) {
     nav {
+<<<<<<< HEAD
         width: 1024px; height: 80px;
         
         > img {
@@ -1060,251 +1061,206 @@ footer > p {
    .first-frame{
         width: 1024px;
         > .bg-image {
+=======
+>>>>>>> 0204b23 (hehe)
         width: 100%;
-        height: 550px;
-        text-align: center;
-        margin-bottom: 100px;
-        }
-        > img:nth-child(2){
-        display: block;
-        width: 250px;
-        height: auto;
-        margin-top: 100px;
-        padding-right: 0px;
-        }
-        > h1:nth-child(3) {margin-top: 30px;padding-right: 0px;}
-        > h1 {font-size: 5rem;}
-        > #stars {width: 60px; margin-bottom: 5px;}
-        > p {font-size: .5rem; line-height: 10px;}
+        height: 80px;
+        padding: 0 20px;
     }
 
+<<<<<<< HEAD
     .new-rectangle{
         box-sizing: border-box;
         width: 1024px;
         height: 2050px;
         margin-top: 10px;
         margin-bottom: 0px;
+=======
+    nav > img {
+        width: 72px;
+        height: 52px;
+    }
+
+    nav > div {
+        gap: 20px;
+    }
+
+    nav > div > a {
+        font-size: 1rem;
+    }
+
+    nav > a {
+        font-size: 0.75rem;
+        width: auto;
+        min-width: 122px;
+        height: 26px;
+    }
+
+    nav > a > img {
+        width: 16px;
+        height: 16px;
+    }
+
+    .first-frame {
+        padding: 0 20px;
+    }
+
+    .first-frame .bg-image {
+        width: 100%;
+        height: auto;
+        min-height: 550px;
+        margin-bottom: 60px;
+    }
+
+    .first-frame > img:nth-child(2) {
+        width: 250px;
+        height: auto;
+        margin: 60px auto 0;
+    }
+
+    .first-frame > h1 {
+        font-size: clamp(2.5rem, 5vw, 5rem);
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .first-frame #stars {
+        width: 60px;
+        margin-bottom: 5px;
+    }
+
+    .first-frame p {
+        font-size: 0.875rem;
+        line-height: 1.4;
+    }
+
+    .new-rectangle {
+        width: 100%;
+        height: auto;
+        min-height: 2050px;
+        margin: 10px 0;
+        padding: 20px;
+>>>>>>> 0204b23 (hehe)
     }
 
     .second-frame {
-        width: 768px;
-        max-width: 100%; 
-        padding: 10px; 
+        width: 100%;
+        max-width: 768px;
+        padding: 20px;
         margin: 0 auto;
-        border-radius: 0;
-        height: 100%; 
+        height: auto;
     }
-    
 
     .second-frame h1 {
-        font-size: 3.8rem; 
-        margin-bottom: 10px;
+        font-size: clamp(2rem, 4vw, 3.8rem);
+        margin-bottom: 20px;
         padding-top: 40px;
     }
 
     .second-frame p {
-        font-size: 1.3rem; 
-        margin-bottom: 20px; 
+        font-size: clamp(1rem, 2vw, 1.3rem);
+        margin-bottom: 20px;
         line-height: 1.4;
     }
 
-    .second-frame .button {
-        font-size: 1.5rem;
-        padding: 10px 30px; 
-    }
-
-    .second-frame .inquiries {
-        display: flex;
-        flex-direction: column; 
-        align-items: center;
-        justify-content: center; 
+    .second-frame div p {
+        font-size: clamp(16px, 2vw, 20px);
+        padding-left: 0;
         text-align: center;
-        margin: 20px 0; 
     }
 
-    .second-frame div p{
-        font-size: 20px;
-        padding-left: 350px;
-    }
-    
     .second-frame .social-links {
-        background-color: var(--primWhite);
-        border-radius: 10px;
-        width: 500px;
-        max-width: 100%;
-        height: 80px; 
-        display: flex;
-        align-items: center;
-        justify-content: flex-start; 
-        gap: 50px; 
-        box-sizing: border-box;
-        padding: 10px; 
-    
-        margin: 0 auto; 
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        min-height: 80px;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
     }
-    
+
     .second-frame .social-links a img {
-        width: 80px;
-        height: 60px;
-        flex-shrink: 0;
-
+        width: 60px;
+        height: auto;
     }
 
-    .promotion-line {
-        width: 96%;                               
-        height: 1px;                              
-        background-color: #FFF1DC;               
-        margin-top: 30px;                         
-        border: none;                         
-        margin-bottom: 30px;                  
+    .promotion-line,
+    .promotion-line-2 {
+        width: 90%;
+        margin: 30px auto;
     }
 
-
-    .best-sellers-title{
-        padding-top: 0px;
-        padding-right: 740px;
-        font-size: 40px;
-        font-family: Impact, Haettenschweiler, 'Bold', sans-serif;
+    .best-sellers-title {
+        padding: 0;
+        margin-bottom: 20px;
+        font-size: clamp(24px, 4vw, 40px);
+        text-align: center;
     }
 
-    .favorites-title{
-        font-size: 30px;
-        padding-left: 80px;
+    .favorites-title {
+        font-size: clamp(20px, 3vw, 30px);
+        padding-left: 0;
+        text-align: center;
     }
 
     .best-sellers-images {
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: flex-start;
-        gap: 10px;
-        overflow-x: auto; 
-        scroll-snap-type: x mandatory;
-        margin-top: 0px;
-        max-width: 100%;
-
-        
+        padding: 0 20px;
+        gap: 20px;
+        justify-content: center;
     }
 
-    .product-image{
-        width: 200px;
+    .product-image {
+        width: 100%;
+        max-width: 200px;
     }
 
     .menu-items .item {
-        font-family: 'Archivo', sans-serif;
-        font-size: 28px;                         
-        color: #FFF1DC;   
-        font-weight: bold;                  
-        cursor: pointer;                        
-        transition: opacity 0.3s ease; 
-        text-decoration: none;           
-    }
-
-    .best-sellers-images .item {
-        flex: 0 0 auto;
-        scroll-snap-align: start;
+        font-size: clamp(18px, 3vw, 28px);
     }
 
     .item img {
-        width: 200px;
-        height: auto;
-    }
-    .new-rectangle .promotion-text-2{
-        font-size: 45px;
-        margin-bottom: 20px;
-        padding-top: 30px;
+        width: 100%;
+        max-width: 200px;
     }
 
-    .promotion-line-2 {
-        width: 80%;                               
-        height: 1px;                              
-        background-color: #FFF1DC;               
-        margin-top: 30px;                         
-        border: none;                         
-        margin-bottom: 30px;                  
-    }
-
-    .second-frame {
-        width: 1024px;
-        max-width: 100%; 
-        padding: 10px; 
-        margin: 0 auto;
-        border-radius: 0;
-        height: 100%; 
-    }
-    
-
-    .second-frame h1 {
-        font-size: 3.8rem; 
-        margin-bottom: 10px;
-        padding-top: 40px;
-    }
-
-    .second-frame p {
-        font-size: 1.3rem; 
-        margin-bottom: 20px; 
-        line-height: 1.4;
-    }
-
-    .second-frame .button {
-        font-size: 1.5rem;
-        padding: 10px 30px; 
-    }
-
-    .second-frame .inquiries {
-        display: flex;
-        flex-direction: column; 
-        align-items: center;
-        justify-content: center; 
+    .new-rectangle .promotion-text-2 {
+        font-size: clamp(24px, 5vw, 45px);
         text-align: center;
-        margin: 20px 0; 
-    }
-
-    .second-frame div p{
-        font-size: 20px;
-        padding-left: 350px;
-    }
-    
-    .second-frame .social-links {
-        background-color: var(--primWhite);
-        border-radius: 10px;
-        width: 500px;
-        max-width: 100%;
-        height: 80px; 
-        display: flex;
-        align-items: center;
-        justify-content: flex-start; 
-        gap: 50px; 
-        box-sizing: border-box;
-        padding: 10px; 
-    
-        margin: 0 auto; 
-    }
-    
-    .second-frame .social-links a img {
-        width: 80px;
-        height: 60px;
-        flex-shrink: 0;
-
     }
 
     footer {
-        width: 1024px;
-        > div {
-            > div:nth-child(1) {
-                > img {width: 250px; height: 250px;padding-left: 100px;}
-                > div {
-                    > h1 {font-size: 1.25rem;}
-                    > div > img {width: 50px; margin-left: 10px;}
-                }
-            }
-
-            > div:nth-child(2) {
-                > h1 {font-size: 1.25rem;}
-                > a {font-size: 1rem; margin-bottom: 5px;}
-            }
-        }
-        
-        > p {width: 1024px; font-size: 1rem; padding-top: 10px; margin: 0 0;}
+        width: 100%;
+        padding: 20px;
     }
 
+    footer > div > div:nth-child(1) > img {
+        width: 200px;
+        height: auto;
+        padding-left: 0;
+    }
+
+    footer > div > div:nth-child(1) > div > h1 {
+        font-size: 1.25rem;
+    }
+
+    footer > div > div:nth-child(1) > div > div > img {
+        width: 40px;
+        margin-left: 10px;
+    }
+
+    footer > div > div:nth-child(2) > h1 {
+        font-size: 1.25rem;
+    }
+
+    footer > div > div:nth-child(2) > a {
+        font-size: 1rem;
+        margin-bottom: 5px;
+    }
+
+    footer > p {
+        width: 100%;
+        font-size: 0.875rem;
+        padding-top: 10px;
+        text-align: center;
+    }
 }
